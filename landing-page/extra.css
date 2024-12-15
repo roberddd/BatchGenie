@@ -1,0 +1,210 @@
+:root {
+  /* MKdocs specific */
+  --md-primary-fg-color:#ec6628;
+  --md-accent-fg-color: #EE0F0F;
+
+  /* BatchGenie specific */
+  --main-accent-color-red: #E0425D;
+  --main-accent-color-green: #15ac59;
+  --main-accent-color-blue: #4952d3;
+  --main-accent-color-orange: #ffa500;
+  --main-box-bg: #f1f1f1;
+  --main-box-border-color: #e0e0e0;
+}
+
+.md-main {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  /* .img-box {
+    float: none;
+    margin: 0 auto 10px auto;
+    max-width: 100%;
+    width: 100%;
+  } */
+  /* Target images aligned right */
+  .img-box[align="right"] { /* Solves issue on mobile for images that are floating right... so float it right again...*/
+     float: right;
+  }
+}
+/* Overall Margin */
+.md-content__inner {
+  margin: 0;
+}
+.md-typeset hr {
+  margin-top: 0;
+  margin-bottom: .9em;
+
+}
+/* ######## < CUSTOM GRID > ######## */
+
+/* Custom Grid - General styling */
+/* .md-typeset .grid_custom>ul>li {
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: white;
+  display: block;
+} */
+
+/* Custom Grid - Unique backgrounds for each card */
+/* .md-typeset .grid_custom>ul>li:nth-child(1) {
+  background-color: #F4A261;
+}
+
+.md-typeset .grid_custom>ul>li:nth-child(2) {
+  background-color: #2A9D8F;
+}
+
+.md-typeset .grid_custom>ul>li:nth-child(3) {
+  background-color: #E87EA1;
+} */
+
+
+/* .md-typeset .grid_custom .middle {
+  background-color: transparent !important;
+} */
+
+/* links inside */
+/* .md-typeset .grid_custom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.md-typeset .grid_custom a:hover {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+.md-typeset .grid_custom a:active {
+  color: #cccccc;
+} */
+
+
+.md-typeset .grid_custom>ul>li:hover {
+  border: .05rem solid rgb(155, 155, 155) !important;
+}
+.md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {
+  background-color: var(--main-box-bg);
+  margin-top:-0.5em;
+}
+.md-typeset .grid_custom .material-icons,
+.md-typeset .grid_custom .lg {
+    font-size: 1.15rem;
+    width: auto;
+    height: auto;
+}
+/* ######## </ CUSTOM GRID > ######## */
+
+
+/* ######## < SECTION BOX > ######## */
+.section-box {
+  background-color: var(--main-box-bg);
+  border: 1px solid var(--main-box-border-color);
+  border-radius: .1rem;
+  display: block;
+  padding: .6em .5em .6em .9em;
+  position: relative;
+  margin: 2em 0;
+}
+.section-box::before {
+  content: ""; /* Empty content for the accent */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  /* border-radius: .1rem; */
+}
+/* Modifiers for different accent colors */
+.section-box.accent-red::before {
+  background-color: var(--main-accent-color-red);
+}
+.section-box.accent-orange::before {
+  background-color: var(--main-accent-color-orange);
+}
+.section-box.accent-green::before {
+  background-color: var(--main-accent-color-green);
+}
+.section-box.accent-blue::before {
+  background-color: var(--main-accent-color-blue);
+}
+/* ######## </ SECTION BOX > ######## */
+
+
+
+/* ######## < HEADERS > ######## */
+.md-typeset h1 {
+  margin-top:.75em;
+  margin-bottom: calc(1em - 35px);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.md-typeset h2 {
+  /* margin-bottom: calc(1em - 45px); */
+  margin-top: .1em;
+  margin-bottom: .1em;
+  font-size: 2em;
+  font-weight: 350;
+}
+.md-typeset h3 {
+  margin-top: .25em;
+  margin-bottom: -.5em;
+}
+.md-typeset h4 {
+  margin-bottom: -1em;
+}
+/* ######## </ HEADERS > ######## */
+
+/* ######## < IMAGE & Video > ######## */
+.img-box, video{
+  border-radius: 4px;
+}
+.img-box-top, video{
+  border-radius: 4px 4px 0px 0px;
+}
+video {
+  height: auto; /* Keep the aspect ratio intact */
+  max-width: 1920px;
+  margin: 1em 0.75em 1em 0;
+}
+/* ######## </ IMAGE & Video > ######## */
+
+.margin-tight-horizontal{
+  margin-left: .075rem !important;
+  margin-right: .075rem !important;
+}
+.margin-tight-vertical{
+  margin-top: 0.30rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+/* Custom 'info2' admonition */
+:root {
+  --md-admonition-icon--info2: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>');
+}
+.md-typeset .admonition.info2,
+.md-typeset details.info2 {
+  border-color: rgb(43, 155, 70);
+}
+.md-typeset .info2 > .admonition-title,
+.md-typeset .info2 > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+.md-typeset .info2 > .admonition-title::before,
+.md-typeset .info2 > summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--info2);
+          mask-image: var(--md-admonition-icon--info2);
+}
+
+.md-content{ /* Remove the main top margin */
+  margin-top: -4em !important;
+}
+
+
