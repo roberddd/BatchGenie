@@ -12,6 +12,15 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.2.9 <small>2025-05-25</small>
+
+- **Other**:
+    - PIL Python library updated from version 11.0.0 to 11.1.0.
+- **Bugfixes**:
+    - Improved compatibility with Blender 4.4: Fixed a bug where some utilities could trigger the error `Python: RuntimeError: could not create instance of XXX to call callback function 'invoke'`.
+
+---
+
 ### 1.2.8 <small>2025-02-19</small>
 
 - **New / Improved Functionality**:

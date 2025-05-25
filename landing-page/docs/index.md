@@ -413,7 +413,7 @@ There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Stren
 
 # Documentation
 
-Extensive documentation is available [here](https://roberddd.github.io/BatchGenie){target="_blank"}, along with a detailed video instruction to guide you through the features.
+Extensive documentation is available [here](https://batchgenie.roberd.net){target="_blank"}, along with a detailed video instruction to guide you through the features.
 
 For details about the current version and updates, check the [Changelog](https://batchgenie.roberd.net/changelog/){target="_blank"}.
 
