@@ -1,0 +1,5 @@
+Generate palette:
+ffmpeg -i input.mp4 -vf "fps=10,scale=500:-1:flags=lanczos,palettegen=max_colors=256" palette.png
+
+Convert to Gif:
+ffmpeg -i input.mp4 -i palette.png -filter_complex "fps=15,scale=500:-1:flags=lanczos[p];[p][1:v]paletteuse" output.gif
