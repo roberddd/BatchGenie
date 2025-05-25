@@ -1,0 +1,749 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://batchgenie.roberd.net/import/" rel="canonical"/>
+<link href="../render/" rel="prev"/>
+<link href="../export/" rel="next"/>
+<link href="../icons/favicon.svg" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
+<title>Importing - BatchGenie Documentation</title>
+<link href="../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../extra/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<meta content="O0wNpVGK1i5I9XqbDfB6psT7uzZy-ERQr56n8fnmEow" name="google-site-verification">
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></link></meta></head>
+<body data-md-color-accent="orange" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#importing">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="BatchGenie Documentation" class="md-header__button md-logo" data-md-component="logo" href=".." title="BatchGenie Documentation">
+<img alt="logo" src="../icons/batchgenie_icon.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            BatchGenie Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Importing
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="..">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../getting_started/">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../render/">
+        
+  
+  
+    
+  
+  Render Assets
+
+      </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="./">
+        
+  
+  
+    
+  
+  Importing
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../export/">
+        
+  
+  
+    
+  
+  Exporting
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../utilities/">
+        
+  
+  
+    
+  
+  Utilities
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../preferences/">
+        
+  
+  
+    
+  
+  Preferences
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="BatchGenie Documentation" class="md-nav__button md-logo" data-md-component="logo" href=".." title="BatchGenie Documentation">
+<img alt="logo" src="../icons/batchgenie_icon.svg"/>
+</a>
+    BatchGenie Documentation
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Home
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../getting_started/">
+<span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../render/">
+<span class="md-ellipsis">
+    Render Assets
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Importing
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Importing
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#import-pbr-textures">
+<span class="md-ellipsis">
+      Import PBR Textures
+    </span>
+</a>
+<nav aria-label="Import PBR Textures" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#import-settings">
+<span class="md-ellipsis">
+      Import Settings
+    </span>
+</a>
+<nav aria-label="Import Settings" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general-settings">
+<span class="md-ellipsis">
+      General Settings
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#material-settings">
+<span class="md-ellipsis">
+      Material Settings
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#image-texture-node-settings">
+<span class="md-ellipsis">
+      Image Texture Node Settings
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#replace-principled-bsdf">
+<span class="md-ellipsis">
+      Replace Principled BSDF
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#custom-attributes">
+<span class="md-ellipsis">
+      Custom Attributes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#texture-type-settings">
+<span class="md-ellipsis">
+      Texture Type Settings
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#import-blend-files">
+<span class="md-ellipsis">
+      Import Blend Files
+    </span>
+</a>
+<nav aria-label="Import Blend Files" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#import-settings_1">
+<span class="md-ellipsis">
+      Import Settings
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#faq">
+<span class="md-ellipsis">
+      FAQ
+    </span>
+</a>
+<nav aria-label="FAQ" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#texture-import-related">
+<span class="md-ellipsis">
+      Texture Import related
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blend-file-import-related">
+<span class="md-ellipsis">
+      Blend File Import related
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#more-settings">
+<span class="md-ellipsis">
+      More adjustments in Preferences
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../export/">
+<span class="md-ellipsis">
+    Exporting
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../utilities/">
+<span class="md-ellipsis">
+    Utilities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../preferences/">
+<span class="md-ellipsis">
+    Preferences
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="importing">Importing<a class="headerlink" href="#importing" title="Permanent link">¶</a></h1>
+<p><img align="right" alt="Import Textures Panel" class="img-box" src="../images/import_textures.png"/></p>
+<p>Importing is done through the BatchGenie main panel found in the <code>3D Viewport</code>. Currently, there are two types of imports available: <a href="#import-pbr-textures"><strong>PBR Textures</strong></a> and <a href="#import-blend-files"><strong>Blend Files</strong></a>. The <code>PBR Texture</code> option imports PBR texture sets from a folder and compiles them into ready-to-use materials. The <code>Blend File</code> option allows you to import objects, collections, and materials from multiple blend files at once.</p>
+<div style="clear:both"></div>
+<h2 id="import-pbr-textures">Import PBR Textures<a class="headerlink" href="#import-pbr-textures" title="Permanent link">¶</a></h2>
+<p><img align="left" alt="Example Import" class="img-box" src="../images/import_example.gif"/></p>
+<ol>
+<li>Open the main BatchGenie panel.</li>
+<li>Go to the <code>Batch Import PBR Texture</code> section.</li>
+<li>Select the folder containing your textures.</li>
+<li>If you need to make any adjustments, click on the <code>Import Settings</code> tab. Otherwise, proceed to the next step.</li>
+<li>Click on <code>Import</code>, and BatchGenie will automatically import and set up the textures for you.</li>
+</ol>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-description="These nodes are automatically added by BatchGenie when needed, such as converting normals and performing other necessary adjustments." data-height="auto" data-title="Example of an import with various additional accessory nodes." data-type="image" data-width="auto" href="../images/imported_material_example.png"><img alt="Example Import With Extra Everything" class="img-box on-glb" data-description="These nodes are automatically added by BatchGenie when needed, such as converting normals and performing other necessary adjustments." data-title="Example of an import with various additional accessory nodes." src="../images/imported_material_example.png" width="60%"/></a>
+<br/>
+<figcaption>Example of an import with various additional accessory nodes.</figcaption>
+</figure>
+<hr/>
+<h3 id="import-settings">Import Settings<a class="headerlink" href="#import-settings" title="Permanent link">¶</a></h3>
+<p><img align="left" alt="Import Textures Settings" class="img-box" src="../images/import_textures_settings.png"/></p>
+<h4 id="general-settings">General Settings<a class="headerlink" href="#general-settings" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Include files in root</strong>: Import textures located directly in the root of the selected folder, which can contain any number of mixed textures.</li>
+<li>
+<p><strong>Include Subfolders</strong>: Import textures from subfolders within the selected folder, where each subfolder contains one distinct set of textures.</p>
+<ul>
+<li><strong>Subfolder Traversing Depth</strong>: Specify how many levels deep to search for subfolders when importing. For example, a depth of 1 means only the immediate subfolders within the selected folder will be searched. Adjust this setting to control the folder depth for more complex directory structures.</li>
+</ul>
+<details class="abstract">
+<summary>Example diagram of traversing</summary>
+<div class="mermaid">graph TD
+    A[Main Folder]
+    A --&gt; B[Subfolder Level 1]
+    B --&gt; C[Subfolder Level 2]
+    C --&gt; D[Subfolder Level 3]
+    B --&gt; E[Another Subfolder Level 2]
+    E --&gt; F[Subfolder Level 3]
+    A --&gt; G[Another Subfolder Level 1]
+</div>
+</details>
+</li>
+<li>
+<p><strong>Skip existing</strong>: Do not import materials if a material with the same name already exists.</p>
+</li>
+<li><strong>Use Fake User</strong>: Use Fake User on imported materials. Ensures that imported materials are saved with your project, even if they're not currently in use. This prevents them from being automatically removed when you save your file.</li>
+<li><strong>Mark as Asset</strong>: Marks imported materials as Assets, making them easily accessible in Blender's Asset Browser for future use.</li>
+<li><strong>Pack Textures</strong>: When enabled, textures are packed into the .blend file during import. This ensures that all textures are embedded within the file, making it self-contained and portable.</li>
+<li><strong>DirectX Normals</strong>: If your materials use DirectX normals but this isn't indicated in their filenames(and the add-on's DirectX detection isn't recognizing them), enable this option to add a 'DirectX to OpenGL' node for normal conversion. See <a href="../preferences/">Preferences</a> to adjust this function.</li>
+<li>
+<p><strong>Alpha from Base Color</strong>: Use the Alpha channel from the 'Base Color' texture and ignore separate Alpha textures. Options include:</p>
+<ul>
+<li><strong>No</strong></li>
+<li><strong>Auto</strong>: Tries to automatically detect the presence of data in the alpha channel, but with a significant processing time impact. See the info box below for details.</li>
+<li><strong>Force On</strong>: Does not check for the presence of an alpha channel but connects it regardless.</li>
+</ul>
+<details class="info2">
+<summary>Autodetect Alpha</summary>
+<p>With the '<strong>Auto</strong>' setting, BatchGenie will check the 'Base Color' texture and try to detect data in its Alpha channel. Since there is no built-in function in Blender to do this, BatchGenie examines the pixels in the alpha channel (present in images that support it, even if empty) to see if there is usable data. While this process is effective, it significantly increases processing time.</p>
+<p>With the '<strong>Force On</strong>' setting, no extra processing is done since the alpha socket will be connected regardless. This is the best option if you know your textures use alpha from the albedo texture.</p>
+<div class="admonition warning">
+<p class="admonition-title">Extra Processing Time</p>
+<p>Extra processing time per material depending on texture resolution:</p>
+<ul>
+<li>2K: 0.4~sec</li>
+<li>4K: 1~sec.</li>
+<li>8K: 4~sec.</li>
+<li>16K: 20~sec.</li>
+</ul>
+<p>Benchmark performed with PNG files on an Intel i7-14700K CPU. While this additional time might seem minor, it becomes significant when compared to the setting being disabled. For example, without this setting enabled, importing a folder with 183 different 4K and 8K texture sets, totaling 725 images and weighing 50GB, takes only 3 seconds.</p>
+</div>
+</details>
+</li>
+<li>
+<p><strong>Filter</strong>: Filter out unwanted textures. Example usage would be to filter out DirectX normal maps by using the filter 'DirectX' or 'DX'.</p>
+</li>
+</ul>
+<hr/>
+<h4 id="material-settings">Material Settings<a class="headerlink" href="#material-settings" title="Permanent link">¶</a></h4>
+<p><img align="left" alt="Import Material Settings" class="img-box" src="../images/import_textures_material-settings.png"/></p>
+<ul>
+<li><strong>Displacement</strong>: Sets the displacement setting of the imported materials. Choose <code>Bump Only</code> for surface texture simulation, <code>Displacement</code> for actual geometric displacement, or <code>Displacement &amp; Bump</code> for a combination of both effects.</li>
+<li>Eevee Specific Settings:<ul>
+<li>Render Method</li>
+<li>Transparent Shadows</li>
+<li>Raytrace Transmission</li>
+</ul>
+</li>
+</ul>
+<p><em>For further technical details see <a href="https://docs.blender.org/manual/en/4.2/render/eevee/material_settings.html" target="_blank">this section</a> in the Blender manual.</em></p>
+<hr/>
+<h4 id="image-texture-node-settings">Image Texture Node Settings<a class="headerlink" href="#image-texture-node-settings" title="Permanent link">¶</a></h4>
+<p><img align="left" alt="Import Texture Node Settings" class="img-box" src="../images/import_textures_image-texture-node-settings.png"/></p>
+<ul>
+<li><strong>Mapping</strong>: The dropdown menu allows you to select the texture mapping method for the textures. Options include <code>UV</code>, <code>Object</code>, and <code>None</code>. Upon selection, the add-on automatically adds the corresponding Texture Coordinate and Mapping nodes to the material.</li>
+<li><strong>Texture Interpolation</strong>: Adjust the interpolation method for image texture nodes. This setting controls how textures are sampled and smoothed. Options include Blender's default options.<br/>There are two selections: the '<strong>default</strong>' option, applied to all textures except displacement, and a separate setting specifically for displacement textures.</li>
+<li><strong>Projection</strong>: The 'Projection' option allows you to choose and adjust the texture projection method for the material. Options include Blender's default methods. For 'Box' projection, there will also be a 'Blend' amount slider available.</li>
+<li><strong>Texture Extension</strong>: Defines how the image is extrapolated past its original bounds. Options include Blender's default methods.</li>
+</ul>
+<p><em>For further technical details about texture Interpolation, Projection &amp; Extension see the <a href="https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html" target="_blank">this section</a> in the Blender manual.</em></p>
+<hr/>
+<h4 id="replace-principled-bsdf">Replace Principled BSDF<a class="headerlink" href="#replace-principled-bsdf" title="Permanent link">¶</a></h4>
+<p>Use a custom Node Group instead of a Principled BSDF for imported materials. This allows for precise material customization during the import process to fit your needs. The interface provides a dropdown that lists all Node-Groups in the current Blend file.</p>
+<p><img align="right" alt="Replace Principled BSDF Custom Node-Group" class="img-box" src="../images/Import_custom_node_group.png"/></p>
+<p>BatchGenie searches for keywords to match and connect sockets in the new Node Group, allowing some flexibility in socket naming. However, sockets should still be named in a way that clearly indicates their purpose. For example, a socket for a roughness texture should include the word <strong>"roughness"</strong>, but additional keywords are allowed, such as <strong>"roughness surface"</strong>. See the example image below.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tips</p>
+<p>If the Node Group contains a socket named "<strong>Normal Color</strong>", BatchGenie will connect the Normal Map texture directly to this socket, bypassing the Normal Map node.
+Similarly, if the socket is named "<strong>Bump Height</strong>", BatchGenie will connect the Bump texture directly to this socket, bypassing the Bump node.</p>
+</div>
+<figure>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-title="Example of an import with a custom Node-Group. Also the 'custom texture' feature is being used here to connect the extra translucency/scattering texture to the 'Translucent Map' socket." data-type="image" data-width="auto" href="../images/Import_custom-node-group-material-example.png"><img alt="Example Import With Extra Everything" class="img-box on-glb" data-title="Example of an import with a custom Node-Group. Also the 'custom texture' feature is being used here to connect the extra translucency/scattering texture to the 'Translucent Map' socket." src="../images/Import_custom-node-group-material-example.png" width="60%"/></a>
+<br>
+<figcaption>Example of an import with a custom Node-Group.</figcaption>
+</br></figure>
+<hr/>
+<h4 id="custom-attributes">Custom Attributes<a class="headerlink" href="#custom-attributes" title="Permanent link">¶</a></h4>
+<p><img align="right" alt="Custom Attributes" class="img-box" src="../images/custom_attributes.png"/></p>
+<p>Set one or multiple socket attributes such as color or values during import.</p>
+<p>BatchGenie automatically finds the sockets of the Principled BSDF (or from your chosen custom Node-Group) and shows what type of values you can set.
+For example, you could set the IOR value for each imported material to a specific value, or use the random-number function to populate a seed number socket. You can set up to 4 attributes during import, and if you need more, you can use the <a href="../utilities/#change-node-attributes">Change Node Attributes</a> utility afterward.</p>
+<p><strong>Attribute Types</strong>:</p>
+<ul>
+<li><strong>Color</strong>: Set a specific color.</li>
+<li><strong>Value</strong>: Set a specific value.</li>
+<li><strong>Random Integer</strong>: Set a randomly generated number as the value.</li>
+<li><strong>Random Float</strong>: Set a randomly generated number with 5 decimals as the value. Example: 3.14159</li>
+<li><strong>Boolean</strong>: True / False.</li>
+</ul>
+<p><em>For both Random Integer and Random Float, you can specify the range for the randomly generated values.</em></p>
+<hr/>
+<h4 id="texture-type-settings">Texture Type Settings<a class="headerlink" href="#texture-type-settings" title="Permanent link">¶</a></h4>
+<p>Here you can choose which texture types to import. Usually, having everything enabled works great, and the add-on has logic to avoid importing duplicates of similar maps. The following texture types also have strength adjustment settings that you can configure during import: Normal, Bump, Ambient Occlusion, Cavity &amp; Displacement.</p>
+<div class="admonition info2">
+<ul>
+<li>If both Roughness and Gloss textures are found, the gloss will be ignored.</li>
+<li>
+<p>If a packed texture is found, it takes priority over separate maps. For example, if a packed ARM texture (AO/Roughness/Metallic) is found alongside separate AO, Roughness, and Metallic textures, the ARM texture will be kept and the separate textures will be ignored.</p>
+</li>
+<li>
+<p>The Ambient Occlusion &amp; Cavity maps will be connected to a 'Mix Color' node alongside the diffuse map. The 'Mix Color' node is set to multiply, controlling the strength of the effect. If both types of maps are found, they will be connected in series.</p>
+</li>
+</ul>
+</div>
+<h5>Custom Texture</h5>
+<p>This option allows you to import and connect up to three custom textures, giving you the flexibility to add any additional maps that suit your specific needs.</p>
+<p><img align="left" alt="Custom Texture Example" class="img-box" src="../images/import_custom_texture.gif"/></p>
+<ul>
+<li><strong>Keyword(s)</strong>: Enter one or more keywords separated by spaces to search and identify your custom textures during the import process. Case-insensitive.</li>
+<li><strong>Texture Type</strong>:<ul>
+<li><strong>Standard</strong>: Connects the texture using the conventional method, linking the color &amp; Alpha outputs to your chosen sockets.</li>
+<li><strong>Packed</strong>: Used for textures where multiple maps are combined into one file. This option separates the texture into individual R, G, B, and A channels, connecting each to different sockets. Most packed maps use RGB channels, but some utilize all four.</li>
+</ul>
+</li>
+</ul>
+<div style="clear:both"></div>
+<ul>
+<li><strong>Connect to</strong>:<ul>
+<li>For <strong>Standard</strong> textures, choose from a dropdown featuring sockets in the Principled BSDF shader. If a custom Node-Group is selected in previous settings, the dropdown will display sockets from that group instead.</li>
+<li>For <strong>Packed</strong> textures, four dropdowns appear for the R, G, B, and A channels, allowing you to assign each channel to different sockets.</li>
+</ul>
+</li>
+<li><strong>Color Space</strong>: The Color Space of the image, either 'Color' for images with color or 'Non-Color' for everything else.</li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">Custom Texture Example</p>
+<p><img align="left" alt="Custom Texture Example" class="img-box" src="../images/import_custom_texture_example_standard.png"/></p>
+<p>So in this example BatchGenie will look for any images that contain the words 'Translucency' or 'Scattering' and connect them to a socket named 'Translucent Map' from a custom Node-Group.</p>
+</div>
+<h2 id="import-blend-files">Import Blend Files<a class="headerlink" href="#import-blend-files" title="Permanent link">¶</a></h2>
+<p>The <code>Blend Files</code> option allows you to import objects, collections, and materials from multiple blend files at once. This feature is designed to streamline asset management by letting you quickly gather specific asset types from various blend files into your current project.</p>
+<p><img align="left" alt="Import Blend Files" class="img-box" src="../images/import_blend-files.png"/></p>
+<ul>
+<li><strong>Directory</strong>: The directory from which BatchGenie should locate Blend files.</li>
+<li>
+<p><strong>Include Subfolders</strong>: If <code>enabled</code>, imports will also include files from subfolders within the selected folder. If <code>disabled</code>, only files directly in the selected folder will be processed.</p>
+<ul>
+<li><strong>Subfolder Traversing Depth</strong>: Specify how many levels deep to search for subfolders when importing. For example, a depth of 1 means only the immediate subfolders within the selected folder will be searched. Adjust this setting to control the folder depth for more complex directory structures.</li>
+</ul>
+<details class="abstract">
+<summary>Example diagram of traversing</summary>
+<div class="mermaid">graph TD
+    A[Main Folder]
+    A --&gt; B[Subfolder Level 1]
+    B --&gt; C[Subfolder Level 2]
+    C --&gt; D[Subfolder Level 3]
+    B --&gt; E[Another Subfolder Level 2]
+    E --&gt; F[Subfolder Level 3]
+    A --&gt; G[Another Subfolder Level 1]
+</div>
+</details>
+</li>
+</ul>
+<div class="compact">
+<ul>
+<li><strong>Type</strong>: Type of Asset to import.<ul>
+<li><strong>Object</strong></li>
+<li><strong>Collection</strong></li>
+<li><strong>Material</strong></li>
+<li><strong>Textures</strong></li>
+<li><strong>Images</strong></li>
+<li><strong>Worlds</strong></li>
+<li><strong>Scenes</strong></li>
+<li><strong>Nodes</strong></li>
+</ul>
+</li>
+<li><strong>Sub Type</strong>: Provides finer control by letting you specify the exact type of Asset to import (applicable only for <strong>Objects</strong> and <strong>Nodes</strong>).<ul>
+<li><strong>Object</strong>:<ul>
+<li><strong>All</strong>: Includes all types of objects.</li>
+<li><strong>Meshes</strong></li>
+<li><strong>Curves</strong></li>
+<li><strong>Metaballs</strong></li>
+<li><strong>Text</strong></li>
+<li><strong>Grease Pencils</strong></li>
+<li><strong>Armatures</strong></li>
+<li><strong>Lattices</strong></li>
+<li><strong>Lights</strong></li>
+<li><strong>Cameras</strong></li>
+</ul>
+</li>
+<li><strong>Nodes</strong>:<ul>
+<li><strong>All</strong></li>
+<li><strong>Shader Node Groups</strong>: Shader and World Node Groups</li>
+<li><strong>Geometry Node Groups</strong></li>
+<li><strong>Geometry Node Trees</strong>: Includes the entire geometry node tree, including all node groups inside it.</li>
+<li><strong>Compositing Node Groups</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Selection</strong>: Allows you to specify which items to include in the import.<ul>
+<li><strong>Marked as Asset</strong></li>
+<li><strong>NOT marked as asset</strong></li>
+<li><strong>All</strong></li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="import-settings_1">Import Settings<a class="headerlink" href="#import-settings_1" title="Permanent link">¶</a></h3>
+<p><img align="left" alt="Import Blend Files Settings" class="img-box" src="../images/import_blend-files_settings.png"/></p>
+<ul>
+<li><strong>Skip existing</strong>: Do not import if an Asset with the same name already exists.</li>
+<li><strong>Use Fake User</strong>: Use Fake User on imported items. Note: This cannot be disabled to ensure data integrity.</li>
+</ul>
+<div style="clear:both"></div>
+<p><img align="right" alt="Import Blend Files Modify Asset Name Settings" class="img-box" src="../images/import_blend-files_modify-asset-names.png"/></p>
+<ul>
+<li><strong>Modify Imported Asset Names</strong>: Add a prefix (a set of characters placed before the name) or a suffix (a set of characters placed after the name) to the names of imported Assets.</li>
+<li><strong>Asset status</strong>:<ul>
+<li><strong>Keep current</strong>: Keeps current Asset status.</li>
+<li><strong>Mark as Asset</strong>: Marks the Imported items as Assets, making them easily accessible in Blender's Asset Browser for future use.</li>
+<li><strong>Clear Asset</strong>: Clears the Asset mark.</li>
+</ul>
+</li>
+</ul>
+<p><img align="right" alt="Import Blend Files" class="img-box" src="../images/import_blend-files_add-metadata.png"/></p>
+<ul>
+<li><strong>Add Metadata</strong>: Description, License, Copyright &amp; Author</li>
+</ul>
+<div style="clear:both"></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can cancel the operation at any time by pressing the ESC key.</p>
+</div>
+<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">¶</a></h2>
+<h3 id="texture-import-related">Texture Import related<a class="headerlink" href="#texture-import-related" title="Permanent link">¶</a></h3>
+<dl>
+<dt><code>How should the texture folder structure look?</code></dt>
+<dd>
+<p>Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders. While the root folder can contain any number of textures mixed together, subfolders should be used to organize distinct sets of textures.</p>
+</dd>
+<dt><code>What if there is an issue finding the appropriate connection for a texture?</code></dt>
+<dd>
+<p>If this occurs, BatchGenie will create a frame with reroute node points for all unconnected textures within the material. From here, you can easily reconnect or delete the textures as needed. This scenario may occur, for example, when utilizing custom Node-Groups instead of the Principled BSDF, and the custom Node-Group lacks certain socket inputs for the textures discovered.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <a href="../utilities/#find-unconnected-nodes">Find Unconnected Nodes</a> utility can assist you to find these issues.</p>
+</div>
+<details class="abstract">
+<summary>Unconnected Textures Example</summary>
+<p>In the the example below you can see a scenario where BatchGenie has not been able to connect the 'Base Color' &amp; 'Metallic' textures and has created some extra info nodes.
+You can also use the <a href="../utilities/#clean-file">Clean File</a> utility to batch remove these from all your materials if needed.</p>
+<p><img alt="Unconnected Textures Example" class="img-box" src="../images/unconnected_batchgenie_nodes_example.png"/></p>
+</details>
+</dd>
+<dt><code>How are DirectX &amp; OpenGL normal maps handled?</code></dt>
+<dd>
+<p>BatchGenie attempts to identify the type of normal map by examining the texture names, which you can configure in the <a href="../preferences/#import">Preferences</a>. If your normal maps do not indicate their format, I highly recommend <a href="https://www.texturecan.com/post/3/DirectX-vs-OpenGL-Normal-Map/" target="_blank">this guide</a> over at <strong>texturecan.com</strong> for help in identifying your maps.</p>
+</dd>
+<dt><code>How fast is the importer?</code></dt>
+<dd>
+<p>With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3 seconds. The '<strong>Alpha from Base Color</strong>' setting is one of the factors that can significantly reduce speed. You can read more about this in the <a href="#general-settings">General Settings</a> section. Benchmark performed on an Intel i7-14700K CPU.</p>
+</dd>
+<dt><code>What image formats are supported?</code></dt>
+<dd>
+<p>All image formats supported by Blender are supported by BatchGenie. If you need to import textures in less common formats, check the <a href="../preferences/#import">Use Extended Formats</a> option in the Preferences.</p>
+</dd>
+</dl>
+<h3 id="blend-file-import-related">Blend File Import related<a class="headerlink" href="#blend-file-import-related" title="Permanent link">¶</a></h3>
+<dl>
+<dt><code>How should the folder structure look?</code></dt>
+<dd>
+<p>No specific structure is required. Blend files can be located directly in the selected folder or within subfolders at multiple levels.</p>
+</dd>
+</dl>
+<h2 id="more-settings">More adjustments in Preferences<a class="headerlink" href="#more-settings" title="Permanent link">¶</a></h2>
+<p>See the add-on <a href="../preferences/">Preferences</a> for more settings related to importing.</p>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      © 2024-2025 <a href="https://roberd.net" rel="noopener" target="_blank">Roberd Palm</a>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="batchgenie_footer_container">
+<a class="batchgenie_footer_link" href="../changelog" title="Changelog">Changelog</a>
+<a class="batchgenie_footer_link" href="../about" title="About">About</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script><script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>

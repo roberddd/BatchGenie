@@ -1,0 +1,1091 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://batchgenie.roberd.net/render/">
+      
+      
+        <link rel="prev" href="../getting_started/">
+      
+      
+        <link rel="next" href="../import/">
+      
+      
+      <link rel="icon" href="../icons/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Render Assets - BatchGenie Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+
+  <meta name="google-site-verification" content="O0wNpVGK1i5I9XqbDfB6psT7uzZy-ERQr56n8fnmEow" />
+  
+
+
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#batch-rendering" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BatchGenie Documentation" class="md-header__button md-logo" aria-label="BatchGenie Documentation" data-md-component="logo">
+      
+  <img src="../icons/batchgenie_icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BatchGenie Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Render Assets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../getting_started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Render Assets
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../import/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Importing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../export/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Exporting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../utilities/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Utilities
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../preferences/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Preferences
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BatchGenie Documentation" class="md-nav__button md-logo" aria-label="BatchGenie Documentation" data-md-component="logo">
+      
+  <img src="../icons/batchgenie_icon.svg" alt="logo">
+
+    </a>
+    BatchGenie Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Render Assets
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Render Assets
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#batch-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Rendering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-via-the-asset-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rendering via the Asset Browser
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asset-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asset Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scene-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scene Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#render-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      FAQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      More adjustments in Preferences
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../import/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Importing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exporting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Utilities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Preferences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Render Assets</h1>
+
+<p>When it comes to rendering Asset Preview images, you have two distinct options. You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets from the Asset Browser for which you wish to render previews for. BatchGenie supports rendering previews for materials, collections, and objects, including VDB volumes.</p>
+<p>When rendering via the Asset Browser, you can work with both internal and external Assets, so you don't have to open each individual Asset Blend file separately.</p>
+<h2 id="batch-rendering">Batch Rendering<a class="headerlink" href="#batch-rendering" title="Permanent link">&para;</a></h2>
+<p><img align="right" alt="Batch Render" class="img-box" src="../images/render_asset_previews_objects.png" /></p>
+<ol>
+<li>Open the BatchGenie panel.</li>
+<li>Go to the <code>Render Asset Previews</code> section in the panel.</li>
+<li>Choose the Asset type you want to render previews for and select the appropriate filters to target the Assets that need previews.</li>
+<li>Configure the scene and render settings as needed.</li>
+<li>Click <code>Batch Render</code>, and BatchGenie will render all Assets that fit your selection filter.</li>
+</ol>
+<h2 id="rendering-via-the-asset-browser">Rendering via the Asset Browser<a class="headerlink" href="#rendering-via-the-asset-browser" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Open the Asset Browser.</li>
+<li>Select the Assets you want to render.</li>
+<li>Locate the BatchGenie menu.</li>
+<li>Configure the scene and render settings as needed.</li>
+<li>Click on <code>Render selected Assets</code> and BatchGenie will render all selected Assets.</li>
+</ol>
+<p><img alt="Asset Browser Render" class="img-box" src="../images/render_asset_previews_render_from_asset_browser.gif" /></p>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
+<p>You can access the settings through both the BatchGenie panel and the BatchGenie menu in the Asset Browser.</p>
+<h4 id="asset-selection">Asset Selection<a class="headerlink" href="#asset-selection" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="asset-selection-objects" name="__tabbed_1" type="radio" /><input id="asset-selection-collections" name="__tabbed_1" type="radio" /><input id="asset-selection-materials" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="asset-selection-objects">Objects</label><label for="asset-selection-collections">Collections</label><label for="asset-selection-materials">Materials</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img align="left" alt="Asset Preview Panel" class="img-box" src="../images/render_asset_previews_objects.png" /></p>
+<ul>
+<li><strong>Selection</strong>: Allows you to specify which objects to include in the rendering process based on predefined criteria. Options listed below:<ul>
+<li><strong>Selected Objects</strong>: Choose the currently selected object(s) in your scene. When using this option, you have the option to mark the objects as Assets.</li>
+<li><strong>Objects marked as Assets</strong>: Objects in the your file that are marked as Assets.</li>
+<li><strong>Objects NOT marked as Assets</strong>: Objects in the your file that are NOT marked as Assets.</li>
+<li><strong>All objects</strong>: All objects in the your file regardless if they are marked as Assets or not.</li>
+</ul>
+</li>
+</ul>
+<p><div style="clear:both"></div></p>
+<ul>
+<li>
+<p><strong>Refine</strong>: Helps you to refine the selection made with the 'Selection' function by applying additional criteria.</p>
+<ul>
+<li><strong>Missing Previews</strong>: Selects objects that are missing Asset Previews.</li>
+<li><strong>Low-Quality Previews</strong>: Selects objects with existing Asset Previews below 256px in resolution.</li>
+<li><strong>Low-Quality &amp; Missing Previews</strong>: Selects objects with existing Asset Previews below 256px in resolution, as well as objects without Asset Previews.</li>
+<li><strong>No Filter (all objects)</strong>: Selects all objects that match the previous selection without any further filtering.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mark as Asset</strong>: Marks the objects as Assets. This option is shown depending on the 'Selection' option. This option can only be disabled if you are saving previews externally (see <a href="#render-settings">Render Settings</a>).</p>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Asset Preview Panel" class="img-box" src="../images/render_asset_previews_collections.png" /></p>
+<ul>
+<li><strong>Selection</strong>: Allows you to specify which collections to include in the rendering process based on predefined criteria. Options listed below:<ul>
+<li><strong>Selected Collection</strong>: Choose the currently selected collection in your scene. When using this option, you have the option to mark the collection as an Asset.</li>
+<li><strong>Collections marked as Assets</strong>: Objects in the your file that are marked as Assets.</li>
+</ul>
+</li>
+</ul>
+<p><div style="clear:both"></div></p>
+<ul>
+<li>
+<p><strong>Refine</strong>: Helps you to refine the selection made with the 'Selection' function by applying additional criteria.</p>
+<ul>
+<li><strong>Missing Previews</strong>: Selects collections that are missing Asset Previews.</li>
+<li><strong>Low-Quality Previews</strong>: Selects collections with existing Asset Previews below 256px in resolution.</li>
+<li><strong>Low-Quality &amp; Missing Previews</strong>: Selects collections with existing Asset Previews below 256px in resolution, as well as collections without Asset Previews.</li>
+<li><strong>No Filter (all objects)</strong>: Selects all collections that match the previous selection without any further filtering.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mark as Asset</strong>: Marks the collections as Assets. This option is shown depending on the 'Selection' option. This option can only be disabled if you are saving previews externally (see <a href="#render-settings">Render Settings</a>).</p>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Asset Preview Panel" class="img-box" src="../images/render_asset_previews_materials.png" /></p>
+<ul>
+<li><strong>Selection</strong>:  Allows you to specify which materials to include in the rendering process based on predefined criteria. Options listed below:<ul>
+<li><strong>Materials on Selected Objects</strong>: All materials assigned to the the currently selected object(s) in your scene. When using this option, you have the option to mark the materials as Assets.</li>
+<li><strong>Materials marked as Assets</strong>: Materials in your file that are marked as Assets.</li>
+<li><strong>Materials NOT marked as Assets</strong>: Materials in the your file that are NOT marked as Assets.</li>
+<li><strong>All materials</strong>: All materials in your file regardless if they are marked as Assets or not. When using this option, you have the option to mark the materials as Assets.</li>
+</ul>
+</li>
+</ul>
+<p><div style="clear:right"></div></p>
+<ul>
+<li>
+<p><strong>Refine</strong>: Helps you to refine the selection made with the 'Selection' function by applying additional criteria.</p>
+<ul>
+<li><strong>Missing Previews</strong>: Selects materials that are missing Asset Previews.</li>
+<li><strong>Low-Quality Previews</strong>: Selects materials with existing Asset Previews below 256px in resolution.</li>
+<li><strong>Low-Quality &amp; Missing Previews</strong>: Selects materials with existing Asset Previews below 256px in resolution, as well as materials without Asset Previews.</li>
+<li><strong>No Filter (all materials)</strong>: Selects all materials that match the previous selection without any further filtering.</li>
+</ul>
+</li>
+<li>
+<p><strong>Only materials imported by BatchGenie</strong>:  When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.</p>
+</li>
+<li><strong>Mark as Asset</strong>: Marks the materials as Assets. This option is shown depending on the 'Selection' option. This option can only be disabled if you are saving previews externally (see <a href="#render-settings">Render Settings</a>).</li>
+</ul>
+</div>
+</div>
+</div>
+<hr />
+<h4 id="scene-settings">Scene Settings<a class="headerlink" href="#scene-settings" title="Permanent link">&para;</a></h4>
+<p>Choose between ready-to-use Presets for quick setups or Manual mode for full control. You can switch to Manual mode at any time and save your adjustments as custom presets.</p>
+<!-- ![Scene Settings](images/render_asset_previews_scene_settings[2x].png){ .img-box align=left width=32% } -->
+
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="scene-settings-presets-mode" name="__tabbed_2" type="radio" /><input id="scene-settings-manual-mode" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="scene-settings-presets-mode">Presets Mode</label><label for="scene-settings-manual-mode">Manual Mode</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img align="left" alt="Scene Settings - Presets Mode" class="img-box" src="../images/render_scene-settings_presets-mode.png" /></p>
+<p>The presets shown below are available starting in version 1.1.5, with plans for fine-tuning and expansion in future updates.</p>
+<p><img alt="Render Presets" class="img-box" src="../images/render_presets.png" width="66%" /></p>
+<div class="admonition info2">
+<p class="admonition-title">Saving Presets</p>
+<p>To save a preset, you need to switch to manual mode.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Scene Settings - Manual Mode" class="img-box" src="../images/render_scene-settings_presets-manual.png" /></p>
+<ul>
+<li>
+<p><strong>Lighting</strong>: Choose from a selection of different lighting setups to enhance your renders. Options include various sky setups and HDRIs. There is also a 'Custom World' option that utilizes your scene's current 'World' for lighting, allowing you to use your own HDR images.</p>
+<details class="abstract">
+<summary>Lighting Setups</summary>
+<p>BatchGenie includes a few built-in HDRIs and also leverages Blender's built-in HDRIs.</p>
+<p><a class="glightbox" href="../images/render_lighting-setups.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Light Setups" class="img-box on-glb" src="../images/render_lighting-setups.png" /></a></p>
+</details>
+</li>
+<li>
+<p><strong>Studio</strong>: Allows you to add a studio backdrop as a background if desired. The studio automatically scales to fit the object you are rendering, ensuring that the background matches your asset's size and position.</p>
+<blockquote>
+<p><em>Note: Studio Setups are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio can be finicky and may not always work as planned.</em></p>
+</blockquote>
+<details class="abstract">
+<summary>Studio Setups</summary>
+<p><a class="glightbox" href="../images/render_studio-setups.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Studio Setups" class="img-box on-glb" src="../images/render_studio-setups.png" /></a></p>
+</details>
+</li>
+</ul>
+<p><div style="clear:both"></div></p>
+<p><h5>Studio Settings</h5></p>
+<p>When you select a Studio Setup, the following settings are available:</p>
+<p><img align="left" alt="Studio Settings" class="img-box" src="../images/render_studio-settings.png" /></p>
+<ul>
+<li><strong>Material</strong>: Choose from the built-in materials, which include some basic options with adjustable settings, or use your own material.</li>
+<li><strong>Transparent Studio</strong>: <em>(Cycles Only)</em> Makes the studio backdrop see-through while remaining visible in reflections and bouncing back light to the objects.</li>
+<li>
+<p><strong>Studio passes light</strong>: Enables the studio to allow light to pass through it, preventing it from blocking light from the world and casting shadows on your Assets.</p>
+</li>
+<li>
+<p><strong>Object Z Offset</strong>: Allows you to adjust the object's height after its lowest point has been aligned with the ground. Use a positive value to lift the object above the ground or a negative value to lower it further. The offset is relative to the object or collection's height, making the adjustment proportional to its size.</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li><strong>Transparent Background</strong>: Enables a transparent background in rendered images by toggling the 'Render &gt; Film &gt; Transparent' option for the render scene.</li>
+<li>
+<p><strong>Save as Preset</strong>: Saves the current scene settings as a preset, allowing you to configure which settings are stored. When saving, BatchGenie will automatically render a preview for the preset, making it visible alongside the built-in presets for easy access.</p>
+<p><img align="left" alt="Studio Settings" class="img-box" src="../images/render_save-preset.png" /> For exact details on which settings are saved, hover your mouse over the buttons to view all the information.</p>
+<div class="admonition info2">
+<p class="admonition-title">How to delete Presets</p>
+<p>Presets that you have created can be removed via <a href="../preferences/#render">Preferences</a>.</p>
+</div>
+</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Strength</strong>: Adjusts the light strength of the world background.</li>
+<li>
+<p><strong>Saturation</strong>: Adjusts the saturation of the world background. This setting is useful when you want to use an HDR image for lighting your scene but don't want the colors of the HDR to influence the colors in your final render. By adjusting the saturation, you can desaturate the HDR image, allowing you to retain the lighting effects without the HDR's color affecting your scene's appearance.</p>
+</li>
+<li>
+<p><strong>Rotation</strong>:</p>
+<ul>
+<li><strong>Sun Rotation</strong>: Adjusts the horizontal angle of the sunlight in your scene or rotates the HDRI background for lighting.</li>
+<li><strong>Object Rotation</strong>: Adjusts the rotation of the object.</li>
+<li><strong>Camera Rotation</strong>: Adjusts the rotation of the camera. Useful when you want to keep the lights &amp; shadows in their current position but want to change the framing.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Rotation Tip</p>
+<p><img align="left" alt="Camera Angle Example" class="img-box" src="../images/render_scene-settings_rotation-example.gif" />
+You can also use the icon buttons to the left and right of the slider to adjust them in -/+ 45 degree increments.</p>
+</div>
+</li>
+</ul>
+<h5>Camera Settings</h5>
+
+<p><img align="left" alt="Camera Settings" class="img-box" src="../images/render_asset_previews_camera_settings.png" /></p>
+<ul>
+<li>
+<p><strong>Tilt</strong>: Adjusts the camera’s tilt, allowing you to change the perspective by angling it up or down</p>
+<details class="abstract">
+<summary>Tilt Example</summary>
+<p><img alt="Camera Tilt Angle Example" class="img-box" src="../images/render_asset_previews_camera_angle_example.png" /></p>
+</details>
+</li>
+<li>
+<p><strong>Zoom</strong>: Adjust the camera distance from the object. Zoom in for a close-up view or zoom out to add space around your object. The zoom is relative to the object or collection's size, making the adjustment proportional to its size.</p>
+</li>
+</ul>
+<div style="clear:both"></div>
+
+<ul>
+<li>
+<p><strong>Focal Length</strong>: Adjusts the focal length of the camera, affecting the field of view and perspective. A shorter focal length increases the field of view, creating a wide-angle effect, while a longer focal length decreases the field of view, producing a zoomed-in effect.</p>
+<!-- !!! abstract inline end "Exposure Example"
+    <img alt="Exposure Example" src="images/render_asset_previews_exposure_example.png" />{ .img-box } -->
+</li>
+<li>
+<p><strong>Exposure</strong>:  Adjusts the overall brightness of your scene by controlling the amount of light that reaches the camera, effectively brightening or darkening the rendered image.</p>
+</li>
+<li>
+<p><strong>Override camera orientation with</strong>: Lets you use a custom camera angle. Choose between:</p>
+<ul>
+<li><strong>View</strong>: Set the render camera to match the current 3D view's perspective, ensuring the render viewpoint aligns with the 3D viewport</li>
+<li><strong>Active Camera</strong>: Set the render camera to the position and orientation of the active camera, ensuring the render viewpoint matches the current active camera's view.</li>
+</ul>
+<p><strong>Autoframe</strong>: When using the override, the Autoframe option automatically adjusts the camera to frame the selected object perfectly, ensuring that it fits within the view without any clipping. Disable this option for manual framing of your Asset, such as for close-up shots.</p>
+<div class="admonition info2">
+<p class="admonition-title">Autoframe</p>
+<ul>
+<li>
+<p>Autoframe cannot be disabled when rendering materials. However, you can still render selected Assets, and Autoframe will be disabled for all other Assets except materials.</p>
+</li>
+<li>
+<p>If you disable <strong>Autoframe</strong> and use any of the '<strong>Studio Setups</strong>' keep in mind that the location of the object/collection will be set to the world origin (0, 0, 0) during render so you'll need to adjust your framing accordingly.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<hr />
+<h5>Material Preview Object</h5>
+
+<p>These settings are used when rendering material Assets.</p>
+<ul>
+<li><strong>Preview Object</strong>: Select the model type used to display the material preview. Choose from options Sphere, Suzanne, Cylinder, or Custom. The Custom option allows you to use the currently selected object in your scene as the preview model.</li>
+<li><strong>Clear current materials</strong>: When rendering previews using the 'Custom Object' option, enable this setting to show only the previewed material on the object. Disable to retain existing materials on the object, assigning the preview material to slot 1. Useful for objects with multiple materials.</li>
+<li><strong>Subdiv</strong>: The number of subdivisions to apply to the model.</li>
+<li><strong>Adaptive Subdiv</strong>: <em>(Cycles Only)</em> Dynamically adjusts the level of detail for subdivided surfaces based on the camera distance, optimizing render times while maintaining high-quality details where needed. Useful for materials with displacement.</li>
+</ul>
+<hr />
+<h4 id="render-settings">Render Settings<a class="headerlink" href="#render-settings" title="Permanent link">&para;</a></h4>
+<p><img align="left" alt="Render Save Location" class="img-box" src="../images/render_asset_previews_render_settings.gif" /></p>
+<p>Here, you'll find settings for the render engine, aspect ratio, resolution, and other Blender default render settings you're likely already familiar with.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip for Asset Preview Resolution</p>
+<p>When rendering images to use as previews for the Assets themselves, the previews saved inside the Asset are limited to 256x256 pixels. With that said, the recommended render resolution is 512x512, which improves overall sharpness even if saved at a lower resolution afterward. This offers an improvement over Blender's default Asset Preview resolution of 128x128 pixels.</p>
+</div>
+<div style="clear:both"></div>
+
+<ul>
+<li>
+<p><strong>Output</strong>: Determines where your rendered images are saved. You can choose between:</p>
+<ul>
+<li><strong>Save in Asset</strong>: to save images within the Blender file.</li>
+<li><strong>Save in Asset &amp; Save Externally</strong>: to save both within the file and as separate external files.</li>
+<li><strong>Save Only External</strong>: to save images only as external files.</li>
+</ul>
+</li>
+<li>
+<p><strong>Add Incremental Filename Suffix</strong>: When saving asset previews externally, this feature automatically appends an incrementing number to the end of filenames, ensuring each version is saved without overwriting previous files. This allows you to quickly iterate renders with various settings. For example, if your object is named "Suzanne", the rendered images will be saved as "Suzanne [1]", "Suzanne [2]", and so on.</p>
+</li>
+</ul>
+<div class="admonition info2">
+<p class="admonition-title">More render settings</p>
+<p>These render settings are copied from your current scene, and you can edit them by going to the <code>Render</code> tab in the Properties panel to make your desired changes.</p>
+<p><strong>Cycles</strong>:</p>
+<ul>
+<li><strong>Light Paths</strong>: All settings.</li>
+<li><strong>Volumes</strong>: <code>Step Rate Render</code> &amp; <code>Max Steps</code>.</li>
+<li><strong>Subdivsion</strong>: <code>Dicing Rate Render</code>.</li>
+</ul>
+<p><strong>EEVEE</strong>:</p>
+<ul>
+<li><strong>Shadows</strong>: All settings are copied except for enabling or disabling, which is controlled within the BatchGenie Render Settings. Also the <code>World &gt; Settings &gt; Sun</code> settings are copied except for enabling or disabling the shadow, which is also controlled within the BatchGenie Render Settings.</li>
+<li><strong>Raytracing</strong>: All settings are copied except for enabling or disabling, which is controlled within the BatchGenie Render Settings.</li>
+<li><strong>Volumes</strong>: All settings.</li>
+<li><strong>Performance</strong>: <code>High Quality Normals</code>.</li>
+</ul>
+<p><strong>Shared Settings</strong>:</p>
+<ul>
+<li><strong>Color Management</strong>: <code>View Transform</code> &amp; <code>Look</code>.</li>
+</ul>
+</div>
+<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
+<dl>
+<dt><code>How fast is the rendering with BatchGenie?</code></dt>
+<dd>
+<p>Rendering speed depends on your system's performance and the chosen settings. BatchGenie doesn't modify or accelerate the rendering process, it uses Blender's standard workflow. However, with default settings, most Asset Previews should render in around 1 second.</p>
+</dd>
+<dt><code>Can I add custom lights to the Lighting Setups?</code></dt>
+<dd>
+<p>Yes! The list can be expanded by directly adding your own HDRIs to Blender via <code>Preferences &gt; Lights &gt; HDRI's</code> which makes them available in this list.</p>
+</dd>
+<dt><code>I'm having slow rendering speeds in Cycles. What can I do?</code></dt>
+<dd>
+<p>Besides adjusting the sample settings under the render settings in the BatchGenie panel, consider tweaking the following settings in Blender’s default <code>Render</code> tab in the Properties panel. These settings are copied from your scene when rendering:</p>
+<ul>
+<li>Decrease the light paths under <code>Render &gt; Light Paths</code>.</li>
+<li>For volumes/VDB rendering, check <code>Render &gt; Volumes</code> and adjust the <code>Step Rate Render</code> and <code>Max Steps</code>. Increasing the <code>Step Rate Render</code> can significantly speed up renders. For Asset Previews, setting <code>Step Rate Render</code> to 5 or higher can halve render times compared to the default 1, without losing visible detail at that scale. If you're rendering for external use, you may need to balance the minor loss in detail against the improved speed.</li>
+<li>If using <strong>Adaptive Subdivision</strong> for models, adjust the <code>Dicing Rate Render</code> in your scene. Ensure the "Experimental" Feature Set is enabled under <code>Render &gt; Feature Set</code>. Then, increase the <code>Dicing Rate Render</code> value under <code>Render &gt; Subdivision</code>.</li>
+</ul>
+</dd>
+<dt><code>I'm experiencing unusual behavior with object location when using the Studio Setups. What should I do?</code></dt>
+<dd>
+<p>Try applying the Scale and Rotation transformations to your object(s). This should resolve the issue.</p>
+</dd>
+<dt><code>Why doesn't my render match the View when using the 'View Camera Override' function?</code></dt>
+<dd>
+<p>Adjust the View camera to match the rendering focal length. For example, if the default focal length under 'Render Settings' is 90mm, go to <code>3D View &gt; View &gt; View</code> and match it.</p>
+</dd>
+<dt><code>I can't find my saved custom presets after upgrading Blender to a new major version.</code></dt>
+<dd>
+<p>When upgrading to a new major version (e.g., from 4.2 to 4.3), you need to manually transfer your presets.</p>
+<p>To do this, go to the Preferences menu and click the "Open Custom Presets Folder" button. Copy all the files from that folder.
+If you still have the previous version of Blender installed, you can transfer your presets either <strong>before</strong> or <strong>after</strong> upgrading. Simply use the old version to copy the presets and paste them into the new version after the upgrade.</p>
+<p>Example: from <code>...\Blender\4.2\extensions\user_default\BatchGenie\presets\custom</code> to <code>...\Blender\4.3\extensions\user_default\BatchGenie\presets\custom</code></p>
+<p>For minor upgrades (e.g., from 4.2.1 to 4.2.2), no manual transfer is needed, as your presets will be preserved.</p>
+</dd>
+</dl>
+<h2 id="more-settings">More adjustments in Preferences<a class="headerlink" href="#more-settings" title="Permanent link">&para;</a></h2>
+<p>See the add-on <a href="../preferences/">Preferences</a> for more settings related to rendering.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024-2025 <a href="https://roberd.net" target="_blank" rel="noopener">Roberd Palm</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="batchgenie_footer_container">
+
+    <a href="../changelog" title="Changelog" class="batchgenie_footer_link">Changelog</a>
+    <a href="../about" title="About" class="batchgenie_footer_link">About</a>
+
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

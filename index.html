@@ -1,0 +1,822 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://batchgenie.roberd.net/">
+      
+      
+      
+        <link rel="next" href="getting_started/">
+      
+      
+      <link rel="icon" href="icons/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>BatchGenie Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="extra/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+
+  <meta name="google-site-verification" content="O0wNpVGK1i5I9XqbDfB6psT7uzZy-ERQr56n8fnmEow" />
+  
+
+
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#for-new-users" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="BatchGenie Documentation" class="md-header__button md-logo" aria-label="BatchGenie Documentation" data-md-component="logo">
+      
+  <img src="icons/batchgenie_icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BatchGenie Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="getting_started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="render/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Render Assets
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="import/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Importing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="export/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Exporting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="utilities/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Utilities
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="preferences/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Preferences
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="BatchGenie Documentation" class="md-nav__button md-logo" aria-label="BatchGenie Documentation" data-md-component="logo">
+      
+  <img src="icons/batchgenie_icon.svg" alt="logo">
+
+    </a>
+    BatchGenie Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#for-new-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      For New Users
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For New Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-choose-batchgenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Choose BatchGenie?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promo-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Promo Video
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-current-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Current Users
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For Current Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-and-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support and Feedback
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-get-batchgenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where to Get BatchGenie
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="render/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Render Assets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="import/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Importing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="export/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exporting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Utilities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="preferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Preferences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Home</h1>
+
+<p>Welcome to BatchGenie, an add-on designed to simplify and automate common Asset-related tasks in <a href="https://www.blender.org/" target="_blank">Blender</a>.</p>
+<hr />
+<h2 id="for-new-users">For New Users<a class="headerlink" href="#for-new-users" title="Permanent link">&para;</a></h2>
+<h3 id="why-choose-batchgenie">Why Choose BatchGenie?<a class="headerlink" href="#why-choose-batchgenie" title="Permanent link">&para;</a></h3>
+<div class="grid cards grid_custom">
+<ul>
+<li>
+<p><span class="twemoji lg middle" style="color:var(--main-accent-color-green)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m8 3a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 2a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3"/></svg></span> <strong>Batch Render Assets</strong></p>
+<hr />
+<p>Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library.</p>
+</li>
+<li>
+<p><span class="twemoji lg middle" style="color:var(--main-accent-color-red)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 16V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-11-4 2.03 2.71L16 11l4 5H8M2 6v14a2 2 0 0 0 2 2h14v-2H4V6"/></svg></span> <strong>Batch Import</strong></p>
+<hr />
+<p>Streamlined Asset importing with a single click, including PBR textures and more, offering robust customization options for bulk imports.</p>
+</li>
+</ul>
+</div>
+<div class="grid cards grid_custom">
+<ul>
+<li>
+<p><span class="twemoji lg middle" style="color:var(--main-accent-color-orange)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 8 5h3v9h2V5h3m2 18H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3v2H6v12h12V9h-3V7h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2"/></svg></span> <strong>Batch Export</strong></p>
+<hr />
+<p>Batch export objects, collections, and materials directly from the Asset Browser, ensuring your assets are ready for use in any project.</p>
+</li>
+<li>
+<p><span class="twemoji lg middle" style="color:var(--main-accent-color-blue)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg></span> <strong>Batch Utilities</strong></p>
+<hr />
+<p>Handle common tasks efficiently, such as updating material settings or finding and fixing unconnected nodes.</p>
+</li>
+</ul>
+</div>
+<h3 id="promo-video">Promo Video<a class="headerlink" href="#promo-video" title="Permanent link">&para;</a></h3>
+<div class="youtube-wrapper">
+    <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/o1rj7gl_im4?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h3 id="feature-details">Feature Details<a class="headerlink" href="#feature-details" title="Permanent link">&para;</a></h3>
+<p>Find out more about BatchGenie's powerful tools on the <a href="feature-details/">Feature Details</a> page.</p>
+<hr />
+<h2 id="for-current-users">For Current Users<a class="headerlink" href="#for-current-users" title="Permanent link">&para;</a></h2>
+<h3 id="updates">Updates<a class="headerlink" href="#updates" title="Permanent link">&para;</a></h3>
+<p>My priority is ensuring compatibility with Blender's Long-Term Support (LTS) releases while maintaining functionality with other updates.
+For details on the current version, check the <a href="changelog/">Changelog</a>.</p>
+<h3 id="support-and-feedback">Support and Feedback<a class="headerlink" href="#support-and-feedback" title="Permanent link">&para;</a></h3>
+<p>If you encounter any issues or have suggestions for new features, please visit:</p>
+<ul>
+<li><a href="https://github.com/roberddd/BatchGenie/issues">GitHub Issues</a></li>
+<li><a href="https://github.com/roberddd/BatchGenie/discussions">GitHub Discussions</a></li>
+</ul>
+<p>Alternatively, you can contact me via email or through the BlenderMarket inbox.</p>
+<h2 id="where-to-get-batchgenie">Where to Get BatchGenie<a class="headerlink" href="#where-to-get-batchgenie" title="Permanent link">&para;</a></h2>
+<p>You can buy BatchGenie in the following stores:</p>
+<div class="grid">
+<p><a class="md-button md-button--stretch" href="https://roberd.gumroad.com/l/BatchGenie"><span class="twemoji gumroad"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0m-.007 5.12c4.48 0 5.995 3.025 6.064 4.744h-3.239c-.069-.962-.897-2.406-2.896-2.406-2.136 0-3.514 1.857-3.514 4.126s1.378 4.125 3.514 4.125c1.93 0 2.758-1.512 3.103-3.025h-3.103v-1.238h6.509v6.327h-2.855v-3.989c-.207 1.444-1.102 4.264-4.617 4.264-3.516 0-5.584-2.82-5.584-6.326 0-3.645 2.276-6.602 6.618-6.602"/></svg></span> Gumroad</a></p>
+<p><a class="md-button md-button--stretch" href="https://blendermarket.com/products/batchgenie"><span class="twemoji"><svg id="Mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1247.24 1386.54"><defs><style>.cls-1{fill:#242b33;}.cls-2{fill:#ec6628;}.cls-3{fill:#f4f4f5;}.cls-4{fill:#b8c6df;}.cls-5{fill:#f9a24c;}</style></defs><title>Blender Market mark</title><path id="Mark_BG" data-name="Mark BG" class="cls-1" d="M1166.2,288.77,716,28.85a173.41,173.41,0,0,0-173.42,0L92.38,288.77A173.42,173.42,0,0,0,5.67,439V958.8A173.42,173.42,0,0,0,92.38,1109l450.2,259.92a173.41,173.41,0,0,0,173.42,0L1166.2,1109a173.42,173.42,0,0,0,86.71-150.19V439A173.42,173.42,0,0,0,1166.2,288.77Z" transform="translate(-5.67 -5.61)"/><g id="Bee"><g id="Body_dark" data-name="Body dark"><path class="cls-2" d="M777.12,683.09c2.3,9.5,18,7.93,22.42-2.16l24.06-54.69c6.59-15,6.6-29.59,0-41s-19.22-18.65-35.49-20.44l-59.4-6.51c-11-1.2-20.14,11.59-13.07,18.34a218.38,218.38,0,0,1,61.44,106.42Z" transform="translate(-5.67 -5.61)"/><path class="cls-2" d="M697.39,658.17C634,548.35,515.41,498.11,432.54,546c-25,14.4-43.69,36.15-56.15,62.38q-2.52,5.31-4.68,10.84c-4.51,11.56,9.29,21.47,19.19,14a97.84,97.84,0,0,1,10.22-6.78c63.4-36.6,154.12,1.84,202.63,85.86s36.44,181.81-27,218.41a102,102,0,0,1-11,5.47c-11.43,4.83-9.75,21.73,2.52,23.6q5.88.9,11.73,1.37c28.94,2.33,57.15-3,82.1-17.44C745,895.81,760.8,768,697.39,658.17Z" transform="translate(-5.67 -5.61)"/><ellipse class="cls-2" cx="437.11" cy="808.44" rx="91.57" ry="121.36" transform="translate(-351.33 321.25) rotate(-30)"/></g><g id="Wings_inner" data-name="Wings inner"><path class="cls-3" d="M963.2,925l-100-173.27c-10.76-18.62-38.42-15.94-45.41,4.39l-43.83,195.1c-9.59,42.71,2.68,88.5,39.23,115,34.63,25.08,83.66,25.69,119.21,2.21C979.23,1037.51,991.28,973.66,963.2,925Z" transform="translate(-5.67 -5.61)"/><path class="cls-3" d="M602.07,299.52l100,173.27c10.75,18.62-5.4,41.24-26.5,37.12L484.73,450.32c-41.79-13.05-75.32-46.57-80-91.47-4.42-42.52,19.57-85.29,57.68-104.34C512.67,229.4,574,250.89,602.07,299.52Z" transform="translate(-5.67 -5.61)"/></g><g id="Wings"><path class="cls-4" d="M813.16,1066.24c34.63,25.08,83.66,25.69,119.21,2.21,46.46-30.68,58.65-93.68,31.49-142.16-.18.88-.37,1.75-.56,2.6-17.82,79.84-135.58,68.24-139-13.49l-6.58-159.25c0,.09-43.83,195.1-43.83,195.1C764.34,994,776.61,1039.75,813.16,1066.24Z" transform="translate(-5.67 -5.61)"/><path class="cls-4" d="M404.76,358.85c-4.41-42.52,19.57-85.29,57.68-104.34,49.8-24.9,110.46-3.95,138.86,43.81-.85-.28-1.69-.56-2.53-.82C520.71,273,471.88,380.8,541,424.59l134.62,85.32L484.73,450.32C442.94,437.27,409.41,403.75,404.76,358.85Z" transform="translate(-5.67 -5.61)"/></g><g id="Body_light" data-name="Body light"><path class="cls-5" d="M799.54,680.93l24.06-54.69c6.59-15,6.6-29.59,0-41L754,625.47a217.85,217.85,0,0,1,23.09,57.62C779.43,692.59,795.1,691,799.54,680.93Z" transform="translate(-5.67 -5.61)"/><path class="cls-5" d="M516.42,762.66,357.81,854.23c33.51,58,96.19,84.6,140,59.31S549.93,820.7,516.42,762.66Z" transform="translate(-5.67 -5.61)"/><path class="cls-5" d="M697.39,658.17l-93.64,54.07c48.51,84,36.44,181.81-27,218.41a102,102,0,0,1-11,5.47c-11.43,4.83-9.75,21.73,2.52,23.6q5.88.9,11.73,1.37c28.94,2.33,57.15-3,82.1-17.44C745,895.81,760.8,768,697.39,658.17Z" transform="translate(-5.67 -5.61)"/></g></g></svg></span> BlenderMarket</a></p>
+<p><a class="md-button md-button--stretch" href="https://shop.roberd.net/b/tv3QV"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.695 0A3.696 3.696 0 0 0 0 3.695v12.92A7.384 7.384 0 0 0 7.385 24h12.92A3.696 3.696 0 0 0 24 20.305V0zm11.653 5.604h.166a3.88 3.88 0 0 1 2.677 1.132 3.88 3.88 0 0 1 0 5.48l-.36.356c-1.826-1.825-3.648-3.656-5.476-5.482l.358-.354a3.88 3.88 0 0 1 2.635-1.132m-6.627.125a3.88 3.88 0 0 1 2.566 1c2.068 2.062 4.127 4.133 6.192 6.199l-5.481 5.482-6.19-6.203C3.549 9.7 5.346 5.702 8.722 5.729zm-1.744 1.71a.464.464 0 0 0-.465.465v1.817c0 .256.208.463.465.463h1.816a.464.464 0 0 0 .463-.463l.008-1.817A.464.464 0 0 0 8.8 7.44H6.977z"/></svg></span> Payhip</a></p>
+</div>
+<!--
+## Support and Feedback
+
+If you encounter any issues or have suggestions for new features, please visit the [Issues](https://github.com/roberddd/BatchGenie/issues) and [Discussions](https://github.com/roberddd/BatchGenie/discussions) pages on GitHub. These are the primary portals for support and feedback. Additionally, you can contact me via email or through the BlenderMarket inbox. Your feedback is invaluable in helping me improve BatchGenie. -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024-2025 <a href="https://roberd.net" target="_blank" rel="noopener">Roberd Palm</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="batchgenie_footer_container">
+
+    <a href="./changelog" title="Changelog" class="batchgenie_footer_link">Changelog</a>
+    <a href="./about" title="About" class="batchgenie_footer_link">About</a>
+
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

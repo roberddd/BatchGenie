@@ -1,0 +1,1732 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://batchgenie.roberd.net/utilities/">
+      
+      
+        <link rel="prev" href="../export/">
+      
+      
+        <link rel="next" href="../preferences/">
+      
+      
+      <link rel="icon" href="../icons/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Utilities - BatchGenie Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+
+  <meta name="google-site-verification" content="O0wNpVGK1i5I9XqbDfB6psT7uzZy-ERQr56n8fnmEow" />
+  
+
+
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#batch-utilities" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BatchGenie Documentation" class="md-header__button md-logo" aria-label="BatchGenie Documentation" data-md-component="logo">
+      
+  <img src="../icons/batchgenie_icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BatchGenie Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Utilities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../getting_started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../render/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Render Assets
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../import/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Importing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../export/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Exporting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Utilities
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../preferences/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Preferences
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BatchGenie Documentation" class="md-nav__button md-logo" aria-label="BatchGenie Documentation" data-md-component="logo">
+      
+  <img src="../icons/batchgenie_icon.svg" alt="logo">
+
+    </a>
+    BatchGenie Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../render/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Render Assets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../import/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Importing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Exporting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Utilities
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Utilities
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#batch-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Utilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Batch Utilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-origin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Origin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-node-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Node Attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-material-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Material Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-shader-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace Shader Nodes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-unconnected-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find Unconnected Nodes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-zero-strength-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find Zero Strength Nodes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-space-validator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Space Validator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Rename
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convert Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relink-converted-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relink Converted Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reload-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reload Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clean File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asset Tags
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asset Tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Asset-tags-add" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Add Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Asset-tags-combine-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Combine / Split Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Asset-tags-remove" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Remove Tags
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asset Metadata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Move Assets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-previews-from-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load previews from disk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pack-textures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pack Textures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-asset-details-to-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export Asset Details to Excel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-operation-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Single Operation Utilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Single Operation Utilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replace-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace Node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-zero-strength-nodes-shader-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find Zero Strength Nodes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Preferences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Utilities</h1>
+
+<p>BatchGenie offers a range of utilities to efficiently manage materials and other Assets. All utilities generate detailed reports in the console, providing insights into the actions performed by each utility. You can view these reports by navigating to <code>Window &gt; Toggle System Console</code> (Windows) or through the system console if you're using Linux (requires starting Blender from the console).</p>
+<p><img align="right" alt="Utilities" class="img-box" src="../images/utilities.png" /></p>
+<h5>Where to find?</h5>
+
+<ul>
+<li>Most utilities are located in the main BatchGenie panel in the <code>3D Viewport &gt; BatchGenie N-Panel &gt; Utilities</code>, focusing on batch operations, as shown in the image to the right.</li>
+<li>The <code>Asset Browser &gt; BatchGenie Menu</code> contains Asset Tagging &amp; Metadata utilities, which are also accessible via the right-click menu in the Asset Browser.</li>
+<li>The <code>Shader Editor &gt; BatchGenie N-Panel</code> includes additional utilities for single operations on materials.</li>
+</ul>
+<div style="clear:both"></div>
+
+<h2 id="batch-utilities">Batch Utilities<a class="headerlink" href="#batch-utilities" title="Permanent link">&para;</a></h2>
+<h3 id="set-origin">Set Origin<a class="headerlink" href="#set-origin" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>Adjust the origin of Mesh objects to the minimum, maximum, or center along the X, Y, or Z axis based on their bounding box.</p>
+<p><img align="left" alt="Set Origin Utility" class="img-box" src="../images/utility_set-origin.png" /></p>
+<h5>Settings</h5>
+<ul>
+<li><strong>Selection</strong>: Allows you to specify which objects to target:<ul>
+<li><strong>Selected Objects</strong></li>
+<li><strong>All Objects</strong></li>
+<li><strong>Objects marked as Assets</strong></li>
+<li><strong>Objects NOT marked as Assets</strong></li>
+</ul>
+</li>
+</ul>
+<!-- <h5>How to use</h5> -->
+<div class="video-wrapper">
+<video width="75%" height="auto"loop muted controls>
+    <source src="../videos/utility_set-origin[900px].mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</div>
+
+<hr />
+<h3 id="change-node-attributes">Change Node Attributes<a class="headerlink" href="#change-node-attributes" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>This utility enables you to batch modify attributes across multiple materials. It’s useful for making consistent adjustments to properties like roughness, metallic, or any other material attribute.</p>
+<p><img align="left" alt="Change Node Attributes Utility" class="img-box" src="../images/utility_change-attribute.png" /></p>
+<h5>Settings</h5>
+
+<ul>
+<li><strong>Selection</strong>: Allows you to specify which materials to include in the batch run:<ul>
+<li><strong>All Materials</strong></li>
+<li><strong>Materials marked as Assets</strong></li>
+<li><strong>Materials NOT marked as Assets</strong></li>
+<li><strong>Materials on Selected Objects</strong></li>
+</ul>
+</li>
+</ul>
+<p><img align="left" alt="Utilities Material Filter" class="img-box" src="../images/utility_filter_materials.png" style="margin-right:calc(1em + 10px)" /></p>
+<ul>
+<li><strong>Filter</strong>: Helps you to refine the selection made with the 'Selection'.<ul>
+<li><strong>Keywords</strong>: Enter keywords to filter materials by their names. Separate multiple keywords with spaces. Case-insensitive. When you type in this field, the  <code>Exclude</code> and <code>Include only</code> buttons will appear. Use <code>Exclude</code> to skip materials containing any of the specified keywords in their names, or <code>Include only</code> to process only those materials whose names contain any of the specified keywords.</li>
+<li><strong>Only materials imported by BatchGenie</strong>: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.</li>
+</ul>
+</li>
+<li><strong>Target</strong>: Specify which node inside the material to target. Refer to the options listed below for details:</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="change-node-attributes-shader-node" name="__tabbed_1" type="radio" /><input id="change-node-attributes-texture-nodes" name="__tabbed_1" type="radio" /><input id="change-node-attributes-displacement-node" name="__tabbed_1" type="radio" /><input id="change-node-attributes-normal-map-nodes" name="__tabbed_1" type="radio" /><input id="change-node-attributes-bump-nodes" name="__tabbed_1" type="radio" /><input id="change-node-attributes-seed-sockets" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="change-node-attributes-shader-node">Shader Node</label><label for="change-node-attributes-texture-nodes">Texture Nodes</label><label for="change-node-attributes-displacement-node">Displacement Node</label><label for="change-node-attributes-normal-map-nodes">Normal Map Nodes</label><label for="change-node-attributes-bump-nodes">Bump Nodes</label><label for="change-node-attributes-seed-sockets">Seed Sockets</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img align="left" alt="Change Node Attributes Shader Node" class="img-box" src="../images/utility_change_attribute_shader.png" />
+Targets the main shader connected to the 'Material Output' inside the material. This can be any type of shader or a custom Node-Group.</p>
+<p><div style="clear:both"></div></p>
+<p><h5>Settings</h5></p>
+<ul>
+<li><strong>Socket</strong>: The name or number of the socket you want to update. Socket numbers start from the top at 0 (e.g., 0 for Base Color, 1 for Roughness, 2 for IOR, etc.). This field is case-sensitive.</li>
+<li>
+<ul>
+<li><strong>Color</strong>: Set a specific color.</li>
+<li><strong>Value</strong>: Set a specific value.</li>
+<li><strong>Random Integer</strong>: Set a randomly generated number as the value.</li>
+<li><strong>Random Float</strong>: Set a randomly generated number with 5 decimals as the value. Example: 3.14159</li>
+<li><strong>Boolean</strong>: True / False.</li>
+</ul>
+<p><strong>Type</strong>:</p>
+<p><em>For both Random Integer and Random Float, you can specify the range for the randomly generated values.</em></p>
+</li>
+<li>
+<p><strong>Additive</strong>: When enabled, this option allows you to adjust the current value of by adding or subtracting your chosen value instead of replacing it. For example, if the 'Emission Strength' of a node is set to 1.0 and you enter a value of 5 with 'Additive' enabled, the new value will be 6. If you enter a value of -2, the new value will be -1.</p>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Change Node Attributes Texture Nodes" class="img-box" src="../images/utility_change_attribute_texture.png" />
+Targets all texture nodes inside the material and you can adjust the following attributes:</p>
+<ul>
+<li><strong>Interpolation</strong></li>
+<li><strong>Projection</strong></li>
+<li><strong>Extension</strong></li>
+</ul>
+<p><em>For further technical details about texture Interpolation, Projection &amp; Extension see the <a href="https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html" target="_blank">this section</a> in the Blender manual.</em></p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Change Node Attributes Displacement Node" class="img-box" src="../images/utility_change_attribute_displacement.png" />
+Targets the Displacement Node inside the material and you can adjust the following attributes:</p>
+<ul>
+<li><strong>Scale</strong>: Specify the new scale to be applied.</li>
+<li><strong>Space</strong>: Space of the input height, can be set either to 'Object' or 'World'.</li>
+</ul>
+<p>The scale option has the <strong>Additive</strong> function:</p>
+<ul>
+<li><strong>Additive</strong>: When enabled, this option allows you to adjust the current value of by adding or subtracting your chosen value instead of replacing it. For example, if the 'Emission Strength' of a node is set to 1.0 and you enter a value of 5 with 'Additive' enabled, the new value will be 6. If you enter a value of -2, the new value will be -1.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Change Node Attributes Normal Map Nodes" class="img-box" src="../images/utility_change_attribute_normal.png" />
+Targets all Normal Map Nodes inside the material and allows you to set a new Strength value to be applied.</p>
+<p><div style="clear:both"></div></p>
+<ul>
+<li><strong>Additive</strong>: When enabled, this option allows you to adjust the current value of by adding or subtracting your chosen value instead of replacing it. For example, if the 'Emission Strength' of a node is set to 1.0 and you enter a value of 5 with 'Additive' enabled, the new value will be 6. If you enter a value of -2, the new value will be -1.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Change Node Attributes Bump Nodes" class="img-box" src="../images/utility_change_attribute_bump.png" />
+Targets all Bump Nodes inside the material and you can adjust the following attributes:</p>
+<ul>
+<li><strong>Strength</strong>: Specify the new strength to be applied.</li>
+<li><strong>Invert</strong>: Invert the bump mapping direction to push into the surface instead of out.</li>
+</ul>
+<p><div style="clear:both"></div></p>
+<ul>
+<li><strong>Additive</strong>: When enabled, this option allows you to adjust the current value of by adding or subtracting your chosen value instead of replacing it. For example, if the 'Emission Strength' of a node is set to 1.0 and you enter a value of 5 with 'Additive' enabled, the new value will be 6. If you enter a value of -2, the new value will be -1.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Change Node Attributes Seed Sockets" class="img-box" src="../images/utility_change_attribute_seed.png" />
+Targets all sockets containing the word 'seed' inside the material and populates them with random numbers. You can specify the range for the randomly generated values by adjusting the A &amp; B.</p>
+</div>
+</div>
+</div>
+<div class="admonition info2">
+<p class="admonition-title">Dry Run (<span class="twemoji"><svg height="1600" viewBox="0 0 1400 1600" width="1400" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"><sodipodi:namedview pagecolor="#303030" showgrid="true"><inkscape:grid id="grid5" units="px" spacingx="100" spacingy="100" color="#4772b3" opacity="0.2" visible="true" /></sodipodi:namedview><g><path d="m34.5 578c-1.48507 0-2.8535.46731-3.86133 1.33594-1.00783.86862-1.63867 2.14879-1.63867 3.66406v3.5c0 1.66667.001 2.82293-.89062 3.9375-.0709.0887-.10946.19893-.10938.3125v.75c.00003.27613.22387.49997.5.5h.5c1.04885 0 2.13736-.63444 3.45898-2.04297l1.66797 1.875c.19883.22274.54727.22274.7461 0l1.62695-1.83008 1.62695 1.83008c.0947.10662.23044.16774.37305.16797h1c.27613-.00003.49997-.22387.5-.5v-2-1-5.5c0-1.51527-.63084-2.79544-1.63867-3.66406-1.00783-.86863-2.37626-1.33594-3.86133-1.33594zm-3.00781 4c.1353-.002.26563.0508.36133.14648l2 2c.31479.315.09181.85335-.35352.85352h-2c-.27613-.00003-.49997-.22387-.5-.5v-2c-.00001-.27311.21911-.496.49219-.5zm5.99219 0c.2822-.009.51573.21765.51562.5v2c-.00003.27613-.22387.49997-.5.5h-2c-.44532-.00017-.66831-.53852-.35352-.85352l2-2c.0899-.0901.21072-.14248.3379-.14648z" transform="matrix(100 0 0 100 -2700 -57700)"/></g></svg></span>Symbol)</p>
+<p>Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you need further details about the batch run check out the report via <code>Window &gt; Toggle System Console</code></p>
+</div>
+<hr />
+<h3 id="change-material-settings">Change Material Settings<a class="headerlink" href="#change-material-settings" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>This utility enables you to batch modify material settings across materials.</p>
+<p><img align="left" alt="Change Material Settings Utility" class="img-box" src="../images/utility_change_material_settings.png" /></p>
+<h5>Settings</h5>
+
+<ul>
+<li><strong>Selection</strong>: Allows you to specify which materials to include in the batch run:<ul>
+<li><strong>All Materials</strong></li>
+<li><strong>Materials marked as Assets</strong></li>
+<li><strong>Materials NOT marked as Assets</strong></li>
+<li><strong>Materials on Selected Objects</strong></li>
+</ul>
+</li>
+</ul>
+<div style="clear:both"></div>
+
+<p><img align="left" alt="Utilities Material Filter" class="img-box" src="../images/utility_filter_materials.png" style="margin-right:calc(1em + 10px)" /></p>
+<ul>
+<li><strong>Filter</strong>: Helps you to refine the selection made with the 'Selection'.<ul>
+<li><strong>Keywords</strong>: Enter keywords to filter materials by their names. Separate multiple keywords with spaces. Case-insensitive. When you type in this field, the  <code>Exclude</code> and <code>Include only</code> buttons will appear. Use <code>Exclude</code> to skip materials containing any of the specified keywords in their names, or <code>Include only</code> to process only those materials whose names contain any of the specified keywords.</li>
+<li><strong>Only materials imported by BatchGenie</strong>: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.</li>
+</ul>
+</li>
+<li><strong>Setting</strong>:<ul>
+<li><strong>Displacement Type</strong></li>
+<li><strong>Eevee Backface Culling</strong></li>
+<li><strong>Eevee Transparent Shadows</strong></li>
+<li><strong>Eevee Render Method</strong></li>
+<li><strong>Eevee Raytrace Transmission</strong></li>
+<li><strong>Eevee Thickness</strong></li>
+<li><strong>Viewport Display Color</strong>: Set the 'Viewport Display Color' of the material to match the 'Base Color' attribute of the main shader.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="replace-shader-nodes">Replace Shader Nodes<a class="headerlink" href="#replace-shader-nodes" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>This utility lets you replace existing 'Shader Editor' nodes with custom Node-Groups. It targets the main shader connected to the 'Material Output' within the material.</p>
+<p><em>This utility is also available in the "Shader Editor" for processing individual nodes rather than in batch. See <a href="#replace-node">this section</a> for details.</em></p>
+<p><img align="left" alt="Replace Shader Nodes Utility" class="img-box" src="../images/utility_replace-shader-nodes.png" /></p>
+<h5>Settings</h5>
+
+<ul>
+<li><strong>Selection</strong>: Allows you to specify which materials to include in the batch run:<ul>
+<li><strong>All Materials</strong></li>
+<li><strong>Materials marked as Assets</strong></li>
+<li><strong>Materials NOT marked as Assets</strong></li>
+<li><strong>Materials on Selected Objects</strong></li>
+</ul>
+</li>
+</ul>
+<div style="clear:both"></div>
+
+<p><img align="left" alt="Utilities Material Filter" class="img-box" src="../images/utility_filter_materials.png" style="margin-right:calc(1em + 10px)" /></p>
+<ul>
+<li><strong>Filter</strong>: Helps you to refine the selection made with the 'Selection'.<ul>
+<li><strong>Keywords</strong>: Enter keywords to filter materials by their names. Separate multiple keywords with spaces. Case-insensitive. When you type in this field, the  <code>Exclude</code> and <code>Include only</code> buttons will appear. Use <code>Exclude</code> to skip materials containing any of the specified keywords in their names, or <code>Include only</code> to process only those materials whose names contain any of the specified keywords.</li>
+<li><strong>Only materials imported by BatchGenie</strong>: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.</li>
+</ul>
+</li>
+</ul>
+<div style="clear:both"></div>
+
+<ul>
+<li><strong>Replacement Node-Group</strong>: Select the custom Node-Group to replace the shader from a dropdown menu displaying all Node-Groups in the current blend file.</li>
+<li><strong>Keep Original Shader Node</strong>: Check this option if you want to retain the original node for manual inspection of the connections afterward. The original node will be moved to the side of the replaced node.</li>
+<li><strong>Custom Attributes</strong>: Set one or multiple socket attributes such as color or values on the new node. See <a href="../import_textures/#custom-attributes">this section</a> in the documentation for detailed instructions.</li>
+</ul>
+<div class="admonition info2">
+<p class="admonition-title">Dry Run (<span class="twemoji"><svg height="1600" viewBox="0 0 1400 1600" width="1400" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"><sodipodi:namedview pagecolor="#303030" showgrid="true"><inkscape:grid id="grid5" units="px" spacingx="100" spacingy="100" color="#4772b3" opacity="0.2" visible="true" /></sodipodi:namedview><g><path d="m34.5 578c-1.48507 0-2.8535.46731-3.86133 1.33594-1.00783.86862-1.63867 2.14879-1.63867 3.66406v3.5c0 1.66667.001 2.82293-.89062 3.9375-.0709.0887-.10946.19893-.10938.3125v.75c.00003.27613.22387.49997.5.5h.5c1.04885 0 2.13736-.63444 3.45898-2.04297l1.66797 1.875c.19883.22274.54727.22274.7461 0l1.62695-1.83008 1.62695 1.83008c.0947.10662.23044.16774.37305.16797h1c.27613-.00003.49997-.22387.5-.5v-2-1-5.5c0-1.51527-.63084-2.79544-1.63867-3.66406-1.00783-.86863-2.37626-1.33594-3.86133-1.33594zm-3.00781 4c.1353-.002.26563.0508.36133.14648l2 2c.31479.315.09181.85335-.35352.85352h-2c-.27613-.00003-.49997-.22387-.5-.5v-2c-.00001-.27311.21911-.496.49219-.5zm5.99219 0c.2822-.009.51573.21765.51562.5v2c-.00003.27613-.22387.49997-.5.5h-2c-.44532-.00017-.66831-.53852-.35352-.85352l2-2c.0899-.0901.21072-.14248.3379-.14648z" transform="matrix(100 0 0 100 -2700 -57700)"/></g></svg></span>Symbol)</p>
+<p>Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.</p>
+</div>
+<hr />
+<h3 id="find-unconnected-nodes">Find Unconnected Nodes<a class="headerlink" href="#find-unconnected-nodes" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>This utility helps you locate materials with unconnected nodes in your file, such as Image Texture nodes.</p>
+<p><img align="left" alt="Find Unconnected Nodes Utility" class="img-box" src="../images/utility_find_unconnected_nodes.png" /></p>
+<h5>Settings</h5>
+
+<ul>
+<li><strong>Type</strong>:<ul>
+<li><strong>All Unconnected Nodes</strong></li>
+<li><strong>Image Texture Nodes</strong></li>
+<li><strong>BatchGenie Imported Textures</strong>: Materials imported by BatchGenie that contain textures which could not be connected. See more <a href="../import_textures/#faq">details here</a> about these nodes.</li>
+</ul>
+</li>
+<li><strong>Highlight Nodes</strong>: Changes the color of the found nodes to red, making them easier to spot visually.</li>
+</ul>
+<h5>Instructions</h5>
+
+<div class="admonition abstract inline end">
+<p class="admonition-title">Example</p>
+<p><a class="glightbox" href="../images/utility_find_unconnected_nodes_example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unconnected Textures Example" class="img-box on-glb" src="../images/utility_find_unconnected_nodes_example.png" /></a></p>
+</div>
+<p>After clicking <code>Search</code>, the interface will display a list of all found materials with unconnected nodes. There are three main approaches to handle the issues: <strong>Automatic</strong>, <strong>Manual</strong>, and <strong>Hybrid</strong>.</p>
+<dl>
+<dt><code>Automatic Approach</code></dt>
+<dd>
+<p>Use the <code>Delete Nodes</code> button to automatically remove all unconnected nodes from materials in the list. You can remove materials from the list if you wish to exclude them from the batch change before clicking the button. No further actions are required.</p>
+</dd>
+<dt><code>Manual Approach</code></dt>
+<dd>
+<ol>
+<li>Use either the <code>Assign to Object</code> button or the <code>Auto Assign</code> toggle to assign materials to the selected object:<ul>
+<li><code>Assign to Object</code>: Click to manually assign the selected material.</li>
+<li><code>Auto Assign</code>: Automatically assigns materials as you select them from the list.</li>
+</ul>
+</li>
+<li>Access the material in the 'Shader Editor' to inspect and address issues by reconnecting or removing nodes as needed.</li>
+<li>Use the <code>Remove from List</code> button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13H5v-2h14z"/></svg></span> icon) to remove materials after resolving issues.</li>
+<li>Once all materials are addressed and removed, perform a new search to confirm all issues are fixed.</li>
+</ol>
+</dd>
+<dt><code>Hybrid Approach</code></dt>
+<dd>
+<p>Mix manual inspection with the automatic process:</p>
+<ol>
+<li>Use <code>Assign to Object</code> or <code>Auto Assign</code> to inspect materials.</li>
+<li>Verify that unconnected nodes can be safely removed. If not, remove the material from the list to prevent unintended deletions.</li>
+<li>Use the <code>Delete Nodes</code> button to remove nodes from any materials still in the list.</li>
+</ol>
+<p>The Hybrid approach allows you to ensure that the automatic deletion does not remove important nodes.</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tips</p>
+<ul>
+<li>The <code>Clear List</code> button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m170.5 51.6-19 28.4h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6h-93.7c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6 36.7 55H424c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v304c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128h-8c-13.3 0-24-10.7-24-24s10.7-24 24-24h69.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128v304c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32V128zm80 64v208c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16m80 0v208c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16m80 0v208c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16"/></svg></span> icon) clears all materials from the list, allowing you to start fresh.</li>
+<li>Use the <code>Highlight Nodes</code> checkbox to easily spot the found nodes.</li>
+<li>Regularly refresh the search to ensure all issues have been captured and addressed.</li>
+<li>
+<p>If you need further details about the findings check out the report via <code>Window &gt; Toggle System Console</code></p>
+<details class="abstract end">
+<summary>Example Console Report</summary>
+<p>Search:</p>
+<p><img alt="Find Unconnected Nodes Console Example" class="img-box" src="../images/utility_find_unconnected_nodes_console_example.png" /></p>
+<p>Delete:</p>
+<p><img alt="Find Unconnected Nodes Console Example" class="img-box" src="../images/utility_find_unconnected_nodes_console_delete_example.png" /></p>
+</details>
+</li>
+</ul>
+</div>
+<hr />
+<h3 id="find-zero-strength-nodes">Find Zero Strength Nodes<a class="headerlink" href="#find-zero-strength-nodes" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>This feature searches for nodes with critical values set to zero, which may negatively affect the appearance of your materials. You can select specific node types to check: For <strong>Normal Map</strong> and <strong>Bump</strong> nodes, it checks if 'Strength' is zero; for <strong>Displacement</strong> nodes, it verifies if 'Scale' is zero. This helps ensure that your materials function as intended.</p>
+<p><em>This utility is also available in the "Shader Editor" for processing individual materials rather than in batch. See <a href="#find-zero-strength-nodes-shader-editor">this section</a> for details.</em></p>
+<p><img align="left" alt="Find Zero Strength Nodes Utility" class="img-box" src="../images/utility_find_zero_strength_nodes.png" /></p>
+<h5>Settings</h5>
+
+<ul>
+<li><strong>Type</strong>:<ul>
+<li><strong>Normal, Bump &amp; Displacement</strong></li>
+<li><strong>Normal Map</strong></li>
+<li><strong>Displacement</strong></li>
+</ul>
+</li>
+<li><strong>Highlight Nodes</strong>: Changes the color of the found nodes to red, making them easier to spot visually.</li>
+</ul>
+<h5>Instructions</h5>
+
+<div class="admonition abstract inline end">
+<p class="admonition-title">Example</p>
+<p><a class="glightbox" href="../images/utility_find_zero_strength_nodes_example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Find Zero Strength Nodes Example" class="img-box on-glb" src="../images/utility_find_zero_strength_nodes_example.png" /></a></p>
+</div>
+<p>After clicking <code>Search</code>, the interface will display a list of all found materials with <em>Zero Strength</em> nodes. There are two main approaches to handle the issues: <strong>Automatic</strong> and <strong>Manual</strong>.</p>
+<dl>
+<dt><code>Automatic Approach</code></dt>
+<dd>
+<p>Use the <code>Set New Value</code> button to batch adjust the values of the nodes in the materials listed. A popup will appear where you can enter the new value. You can also remove materials from the list if you wish to exclude them from the batch change before clicking the button. No further actions are required.</p>
+</dd>
+<dt><code>Manual Approach</code></dt>
+<dd>
+<ol>
+<li>Use either the <code>Assign to Object</code> button or the <code>Auto Assign</code> toggle to assign materials to the selected object:<ul>
+<li><code>Assign to Object</code>: Click to manually assign the selected material.</li>
+<li><code>Auto Assign</code>: Automatically assigns materials as you select them from the list.</li>
+</ul>
+</li>
+<li>Access the material in the 'Shader Editor' to inspect and address issues by adjusting the found nodes.</li>
+<li>Use the <code>Remove from List</code> button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13H5v-2h14z"/></svg></span> icon) to remove materials after resolving issues.</li>
+<li>Once all materials are addressed and removed, perform a new search to confirm all issues are fixed.</li>
+</ol>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tips</p>
+<ul>
+<li>The <code>Clear List</code> button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m170.5 51.6-19 28.4h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6h-93.7c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6 36.7 55H424c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v304c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128h-8c-13.3 0-24-10.7-24-24s10.7-24 24-24h69.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128v304c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32V128zm80 64v208c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16m80 0v208c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16m80 0v208c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16"/></svg></span> icon) clears all materials from the list, allowing you to start fresh.</li>
+<li>Use the <code>Highlight Nodes</code> checkbox to easily spot the found nodes.</li>
+<li>
+<p>If you need further details about the findings check out the report via <code>Window &gt; Toggle System Console</code></p>
+<details class="abstract end">
+<summary>Example Console Report</summary>
+<p><img alt="Find Zero Strength Nodes Console Example" class="img-box" src="../images/utility_find_zero_strength_nodes_console_example.png" /></p>
+</details>
+</li>
+</ul>
+</div>
+<hr />
+<h3 id="color-space-validator">Color Space Validator<a class="headerlink" href="#color-space-validator" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>This utility verifies that the image textures within materials in your file are using the correct color space settings, generates reports on its findings, and provides an option to automatically fix any issues.</p>
+<p><img align="left" alt="Color Space Validator Utility" class="img-box" src="../images/utility_color_space_validator.png" /></p>
+<h5>Settings</h5>
+
+<ul>
+<li><strong>Console report</strong>:<ul>
+<li><strong>Standard</strong>: Report only includes the textures that have wrong color spaces.</li>
+<li><strong>Detailed</strong>: Includes all color space details of all textures.</li>
+</ul>
+</li>
+</ul>
+<div style="clear:both"></div>
+
+<details class="abstract end">
+<summary>Example Console Report</summary>
+<p>To view the report, go to <code>Window &gt; Toggle System Console</code>.</p>
+<p>Standard:</p>
+<p><a class="glightbox" href="../images/utility_color_space_validator_console_example.png" data-type="image" data-width="auto" data-height="auto" data-description="Example of standard console report for incorrect color spaces" data-desc-position="bottom"><img alt="Color Space Validator Console Example" class="img-box on-glb" data-description="Example of standard console report for incorrect color spaces" src="../images/utility_color_space_validator_console_example.png" /></a></p>
+<p>Detailed:</p>
+<p><a class="glightbox" href="../images/utility_color_space_validator_console_detailed_example.png" data-type="image" data-width="auto" data-height="auto" data-description="Example of detailed console report for incorrect color spaces" data-desc-position="bottom"><img alt="Color Space Validator Detailed Console Example" class="img-box on-glb" data-description="Example of detailed console report for incorrect color spaces" src="../images/utility_color_space_validator_console_detailed_example.png" /></a></p>
+</details>
+<h5>Instructions</h5>
+
+<div class="admonition abstract inline end">
+<p class="admonition-title">Examples</p>
+<p><a class="glightbox" href="../images/utility_color_space_validator_example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Color Space Validator Example" class="img-box on-glb" src="../images/utility_color_space_validator_example.png" /></a></p>
+</div>
+<p>After clicking <code>Search</code>, the interface will display a list of all materials with textures that have incorrect color spaces. There are two main approaches to handle the issues: <strong>Automatic</strong> and <strong>Manual</strong>.</p>
+<dl>
+<dt><code>Automatic Approach</code></dt>
+<dd>
+<p>Use the <code>Auto Fix</code> button to automatically set the correct Color Spaces for texture nodes in the materials listed. You can remove materials from the list if you wish to exclude them from the batch change before clicking the button. No further actions are required.</p>
+</dd>
+</dl>
+<div class="admonition abstract inline end">
+<p>This frame is created inside the materials to help you find the relevant textures:
+<a class="glightbox" href="../images/utility_color_space_validator_frame_example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Color Space Validator Example" class="img-box on-glb" src="../images/utility_color_space_validator_frame_example.png" /></a></p>
+<p><em>These frames are automatically removed when running <code>Auto Fix</code> and can also be removed with the <a href="#clean-file">Clean File</a> utility.</em></p>
+</div>
+<dl>
+<dt><code>Manual Approach</code></dt>
+<dd>
+<ol>
+<li>Use either the <code>Assign to Object</code> button or the <code>Auto Assign</code> toggle to assign materials to the selected object:<ul>
+<li><code>Assign to Object</code>: Click to manually assign the selected material.</li>
+<li><code>Auto Assign</code>: Automatically assigns materials as you select them from the list.</li>
+</ul>
+</li>
+<li>Access the material in the 'Shader Editor' to inspect and address issues by adjusting the found nodes. Look for the node-frame titled '<strong>Incorrect Color Spaces</strong>' that BatchGenie automatically creates, which contains links to all relevant textures.</li>
+<li>Use the <code>Remove from List</code> button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13H5v-2h14z"/></svg></span> icon) to remove materials after resolving issues.</li>
+<li>Once all materials are addressed and removed, perform a new search to confirm all issues are fixed.</li>
+</ol>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>The <code>Clear List</code> button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m170.5 51.6-19 28.4h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6h-93.7c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6 36.7 55H424c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8v304c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128h-8c-13.3 0-24-10.7-24-24s10.7-24 24-24h69.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128v304c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32V128zm80 64v208c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16m80 0v208c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16m80 0v208c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16"/></svg></span> icon) clears all materials from the list, allowing you to start fresh.</li>
+</ul>
+</div>
+<hr />
+<h3 id="batch-rename">Batch Rename<a class="headerlink" href="#batch-rename" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>While not an all-encompassing renaming tool, this function provides targeted assistance for a few specific use cases. It includes options for aligning mesh names with object names and syncing image names with their file names, making it particularly useful when dealing imported Assets that have inconsistent naming conventions.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="batch-rename-set-mesh-names-same-as-object-names" name="__tabbed_2" type="radio" /><input id="batch-rename-set-image-names-same-as-the-image-file-names" name="__tabbed_2" type="radio" /><input id="batch-rename-set-material-names-same-as-object-names" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="batch-rename-set-mesh-names-same-as-object-names">Set Mesh names same as Object names</label><label for="batch-rename-set-image-names-same-as-the-image-file-names">Set Image names same as the Image File names</label><label for="batch-rename-set-material-names-same-as-object-names">Set Material names same as Object names</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img align="left" alt="Batch Rename Utility" class="img-box" src="../images/utility_batch-rename-1.png" /></p>
+<p><h5>Options</h5></p>
+<ul>
+<li><strong>Selection</strong>: Allows you to specify which objects to include in the batch run:<ul>
+<li><strong>All Objects</strong></li>
+<li><strong>Objects marked as Assets</strong></li>
+<li><strong>Objects NOT marked as Assets</strong></li>
+<li><strong>Selected Objects</strong></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Batch Rename Utility" class="img-box" src="../images/utility_batch-rename-2.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Batch Rename Utility" class="img-box" src="../images/utility_batch-rename-3.png" /></p>
+<p><h5>Options</h5></p>
+<ul>
+<li><strong>Selection</strong>: Allows you to specify which objects to include in the batch run:<ul>
+<li><strong>All Objects</strong></li>
+<li><strong>Objects marked as Assets</strong></li>
+<li><strong>Objects NOT marked as Assets</strong></li>
+<li><strong>Selected Objects</strong></li>
+</ul>
+</li>
+<li><strong>Naming Options</strong>:<ul>
+<li><strong>Add as Prefix</strong>: Adds the object name as a prefix to the material name (e.g., <code>ObjectName_OriginalMaterialName</code>).</li>
+<li><strong>Add as Suffix</strong>: Adds the object name as a suffix to the material name ( (e.g., <code>OriginalMaterialName_ObjectName</code>).</li>
+<li><strong>Complete Rename</strong>: Replace the material name with the object name.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<details class="abstract">
+<summary>Examples</summary>
+<p><strong>Set Mesh names same as Object names</strong>:</p>
+<p><img alt="Batch Rename Mesh Example" class="img-box" src="../images/utility_batch_rename_mesh_example.gif" /></p>
+<p><strong>Set Image names same as the Image File names</strong>:</p>
+<p><strong>Use Case</strong>: You imported external models, and all texture names are generic like 'color map', 'roughness map', and 'normal map', making it difficult to track them. This feature solves the issue by renaming image names in Blender to match the actual file names. For example, instead of 'color map', it could be 'Bark_2K_BaseColor'.</p>
+<p><img alt="Batch Rename Texture Example" class="img-box" src="../images/utility_batch_rename_texture_example.gif" /></p>
+</details>
+<div class="admonition info2">
+<p class="admonition-title">Dry Run (<span class="twemoji"><svg height="1600" viewBox="0 0 1400 1600" width="1400" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"><sodipodi:namedview pagecolor="#303030" showgrid="true"><inkscape:grid id="grid5" units="px" spacingx="100" spacingy="100" color="#4772b3" opacity="0.2" visible="true" /></sodipodi:namedview><g><path d="m34.5 578c-1.48507 0-2.8535.46731-3.86133 1.33594-1.00783.86862-1.63867 2.14879-1.63867 3.66406v3.5c0 1.66667.001 2.82293-.89062 3.9375-.0709.0887-.10946.19893-.10938.3125v.75c.00003.27613.22387.49997.5.5h.5c1.04885 0 2.13736-.63444 3.45898-2.04297l1.66797 1.875c.19883.22274.54727.22274.7461 0l1.62695-1.83008 1.62695 1.83008c.0947.10662.23044.16774.37305.16797h1c.27613-.00003.49997-.22387.5-.5v-2-1-5.5c0-1.51527-.63084-2.79544-1.63867-3.66406-1.00783-.86863-2.37626-1.33594-3.86133-1.33594zm-3.00781 4c.1353-.002.26563.0508.36133.14648l2 2c.31479.315.09181.85335-.35352.85352h-2c-.27613-.00003-.49997-.22387-.5-.5v-2c-.00001-.27311.21911-.496.49219-.5zm5.99219 0c.2822-.009.51573.21765.51562.5v2c-.00003.27613-.22387.49997-.5.5h-2c-.44532-.00017-.66831-.53852-.35352-.85352l2-2c.0899-.0901.21072-.14248.3379-.14648z" transform="matrix(100 0 0 100 -2700 -57700)"/></g></svg></span>Symbol)</p>
+<p>Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.</p>
+</div>
+<hr />
+<h3 id="convert-images">Convert Images<a class="headerlink" href="#convert-images" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>This utility allows you to seamlessly convert images between multiple formats, supporting both lossless and lossy compression methods. It's ideal for optimizing file sizes, preparing assets for various workflows, or standardizing image formats across projects.
+You can convert images back and forth between the following formats: <code>Png, Jpg, Webp, Tga, Tif, Bmp</code>.</p>
+<p><img align="left" alt="Convert Images Utility" class="img-box" src="../images/utility_convert-images.png" /></p>
+<h5>Options</h5>
+
+<ul>
+<li><strong>Selection</strong><ul>
+<li><strong>Target</strong>: Select the file format to target.</li>
+<li><strong>In</strong>: Select the source for image conversion.<ul>
+<li><strong>Images used by this Blend file</strong>: All images used by the current Blend file.</li>
+<li><strong>Choose a directory</strong>: Images in a specified folder.<ul>
+<li><strong>Include Subfolders</strong>: Whether to include images in subfolders when selecting a directory</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Output</strong><ul>
+<li><strong>Save as</strong>: Choose the file format to convert to, along with quality settings (if available for the selected format).</li>
+<li><strong>In</strong>: Choose where to save the converted images.<ul>
+<li><strong>Original Location</strong>: Save converted images in the same location as the original files.</li>
+<li><strong>Output Folder</strong>: Save converted images in a specified output folder.<ul>
+<li><strong>Maintain Folder Hierarchy</strong>: Preserve the original folder structure when saving files. Only available when using <strong>Output Folder</strong> option.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Overwrite</strong>: Overwrite the output file if it already exists.</li>
+<li><strong>Delete Original</strong>: Delete the original image file after it has been successfully converted.</li>
+</ul>
+</li>
+<li><strong>Modifications</strong><ul>
+<li><strong>Downscale Image</strong>: Enable this option to downscale the image during conversion.<ul>
+<li><strong>Method</strong>: Choose the resampling method to use when resizing images:<ul>
+<li><strong>Lanczos (High Quality, Default)</strong></li>
+<li><strong>Nearest Neighbor (Pixel Art)</strong></li>
+<li><strong>Bilinear (Intermediate Quality)</strong></li>
+<li><strong>Bicubic (Smooth Gradients)</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="admonition info2">
+<p class="admonition-title">Dry Run (<span class="twemoji"><svg height="1600" viewBox="0 0 1400 1600" width="1400" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"><sodipodi:namedview pagecolor="#303030" showgrid="true"><inkscape:grid id="grid5" units="px" spacingx="100" spacingy="100" color="#4772b3" opacity="0.2" visible="true" /></sodipodi:namedview><g><path d="m34.5 578c-1.48507 0-2.8535.46731-3.86133 1.33594-1.00783.86862-1.63867 2.14879-1.63867 3.66406v3.5c0 1.66667.001 2.82293-.89062 3.9375-.0709.0887-.10946.19893-.10938.3125v.75c.00003.27613.22387.49997.5.5h.5c1.04885 0 2.13736-.63444 3.45898-2.04297l1.66797 1.875c.19883.22274.54727.22274.7461 0l1.62695-1.83008 1.62695 1.83008c.0947.10662.23044.16774.37305.16797h1c.27613-.00003.49997-.22387.5-.5v-2-1-5.5c0-1.51527-.63084-2.79544-1.63867-3.66406-1.00783-.86863-2.37626-1.33594-3.86133-1.33594zm-3.00781 4c.1353-.002.26563.0508.36133.14648l2 2c.31479.315.09181.85335-.35352.85352h-2c-.27613-.00003-.49997-.22387-.5-.5v-2c-.00001-.27311.21911-.496.49219-.5zm5.99219 0c.2822-.009.51573.21765.51562.5v2c-.00003.27613-.22387.49997-.5.5h-2c-.44532-.00017-.66831-.53852-.35352-.85352l2-2c.0899-.0901.21072-.14248.3379-.14648z" transform="matrix(100 0 0 100 -2700 -57700)"/></g></svg></span>Symbol)</p>
+<p>Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tips</p>
+<ul>
+<li><strong>Cancel the Operation</strong>: You can cancel the operation at any time by pressing the <strong>ESC</strong> key. The utility will complete any ongoing tasks and display a summary of processed and skipped files.</li>
+<li><strong>Choosing the Best Image Format</strong>: For a balance between image quality and file size, <strong>WebP</strong> is often the best choice. It provides significant storage savings and is generally more efficient than PNG or JPEG. WebP supports both <strong>lossy</strong> and <strong>lossless</strong> compression, along with features like transparency, making it a versatile option. For more details about supported image formats in Blender, check the <a href="https://docs.blender.org/manual/en/latest/files/media/image_formats.html">official documentation</a>.</li>
+</ul>
+</div>
+<hr />
+<h3 id="relink-converted-images">Relink Converted Images<a class="headerlink" href="#relink-converted-images" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>This utility helps you update Blender's links to images that have been converted to a different file format. When image files are converted (e.g., from <code>Png</code> or <code>Tif</code> to <code>Jpg</code> or <code>Webp</code>) to save disk space or optimize performance, Blender may lose track of the original image links due to the change in file extensions. This utility automatically relinks the converted images by searching for the corresponding files and updating their links based on customizable conditions.</p>
+<p><img align="left" alt="Relink Converted Images Utility" class="img-box" src="../images/utility_relink-converted-images.png" /></p>
+<h5>Options</h5>
+
+<ul>
+<li><strong>Old Format</strong>: Select the file format you are converting from. The supported formats in Blender include: <code>Png, Jpg, Jpeg, Tga, Webp, Exr, Tif, Tiff, Bmp, Sgi, Rgb, Bw, Jp2, J2c, Cin, Dpx, Hdr</code>.</li>
+<li><strong>New Format</strong>: Choose the file format you are converting to. The available formats match those listed for the "Old Format".</li>
+<li><strong>File Verification</strong>:<ul>
+<li><strong>Verify if old file exists</strong>: Ensures that the old file exists before attempting to relink.</li>
+<li><strong>Link if old file does not exist</strong>: This option will only link the new file if the old file is missing.</li>
+<li><strong>Always link new file</strong>: Links the new file regardless of whether the old file is found.</li>
+<li><strong>Skip relink if old file exists</strong>: Skips the relinking process if the old file still exists.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition info2">
+<p class="admonition-title">Dry Run (<span class="twemoji"><svg height="1600" viewBox="0 0 1400 1600" width="1400" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"><sodipodi:namedview pagecolor="#303030" showgrid="true"><inkscape:grid id="grid5" units="px" spacingx="100" spacingy="100" color="#4772b3" opacity="0.2" visible="true" /></sodipodi:namedview><g><path d="m34.5 578c-1.48507 0-2.8535.46731-3.86133 1.33594-1.00783.86862-1.63867 2.14879-1.63867 3.66406v3.5c0 1.66667.001 2.82293-.89062 3.9375-.0709.0887-.10946.19893-.10938.3125v.75c.00003.27613.22387.49997.5.5h.5c1.04885 0 2.13736-.63444 3.45898-2.04297l1.66797 1.875c.19883.22274.54727.22274.7461 0l1.62695-1.83008 1.62695 1.83008c.0947.10662.23044.16774.37305.16797h1c.27613-.00003.49997-.22387.5-.5v-2-1-5.5c0-1.51527-.63084-2.79544-1.63867-3.66406-1.00783-.86863-2.37626-1.33594-3.86133-1.33594zm-3.00781 4c.1353-.002.26563.0508.36133.14648l2 2c.31479.315.09181.85335-.35352.85352h-2c-.27613-.00003-.49997-.22387-.5-.5v-2c-.00001-.27311.21911-.496.49219-.5zm5.99219 0c.2822-.009.51573.21765.51562.5v2c-.00003.27613-.22387.49997-.5.5h-2c-.44532-.00017-.66831-.53852-.35352-.85352l2-2c.0899-.0901.21072-.14248.3379-.14648z" transform="matrix(100 0 0 100 -2700 -57700)"/></g></svg></span>Symbol)</p>
+<p>Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.</p>
+</div>
+<hr />
+<h3 id="reload-images">Reload Images<a class="headerlink" href="#reload-images" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>If you have edited any of your textures externally and the changes are not visible in Blender, use this utility to reload all images in your your file.</p>
+<p><img alt="Reload Images Utility" class="img-box" src="../images/utility_reload-images.png" /></p>
+<hr />
+<h3 id="clean-file">Clean File<a class="headerlink" href="#clean-file" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities</p>
+</blockquote>
+<p>Helps delete any temporary files that might be left behind by BatchGenie. There are two scenarios when you might want to use this utility:</p>
+<ol>
+<li>
+<p><strong>Blender Crashes</strong>: If Blender crashes during import or other batch processes, it can leave behind temporary data (e.g., temp materials, scenes, objects depending on the operation).</p>
+</li>
+<li>
+<p><strong>Removing Extra Info Nodes</strong>: If you want to remove any extra info nodes created inside your materials by BatchGenie. See the 'Info' box below for details.</p>
+</li>
+</ol>
+<p><img align="left" alt="Clean File Utility" class="img-box" src="../images/utility_clean_file.png" /></p>
+<h5>Settings</h5>
+
+<ul>
+<li>
+<p><strong>Material Info Nodes</strong>: Checking this option will remove extra nodes that BatchGenie has created inside materials, such as frames and node reroutes that include notes and other useful information. This will not affect the appearance of the materials.</p>
+<div class="admonition info2">
+<p class="admonition-title">Extra Info Nodes</p>
+<p>Examples of these nodes include:</p>
+<ul>
+<li>
+<p>'<strong>Unable to connect</strong>' nodes created during imports when there are issues connecting textures. <a href="../import_textures/#faq">See details here</a>.</p>
+</li>
+<li>
+<p>'<strong>Incorrect Color Space</strong>' nodes created by the 'Color Space Validator' utility. <a href="#color-space-validator">See details here</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<hr />
+<h3 id="asset-tags">Asset Tags<a class="headerlink" href="#asset-tags" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: Asset Browser ▸ BatchGenie Menu</p>
+</blockquote>
+<p><img align="right" alt="Asset Tags Utility" class="img-box" src="../images/utilities_asset_browser.png" /></p>
+<p>Add or remove tags from your Assets. Select any number of Assets of any type, choose the desired tags to add, and BatchGenie will assign them to the appropriate Assets. These can be either regular tags or Smart Tags that apply the property of your choice to the Asset.</p>
+<p><em>This feature works with both internal and external Assets, so you don't have to open each individual Asset Blend file separately.</em></p>
+<div style="clear:both"></div>
+
+<h4 id="Asset-tags-add">- Add Tags<a class="headerlink" href="#Asset-tags-add" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:6"><input checked="checked" id="Asset-tags-add-default-tag" name="__tabbed_3" type="radio" /><input id="Asset-tags-add-object-triangles" name="__tabbed_3" type="radio" /><input id="Asset-tags-add-object-vertices" name="__tabbed_3" type="radio" /><input id="Asset-tags-add-object--collection-dimensions" name="__tabbed_3" type="radio" /><input id="Asset-tags-add-material-texture-resolution" name="__tabbed_3" type="radio" /><input id="Asset-tags-add-material-type" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="Asset-tags-add-default-tag">Default Tag</label><label for="Asset-tags-add-object-triangles">Object Triangles</label><label for="Asset-tags-add-object-vertices">Object Vertices</label><label for="Asset-tags-add-object--collection-dimensions">Object / Collection Dimensions</label><label for="Asset-tags-add-material-texture-resolution">Material Texture Resolution</label><label for="Asset-tags-add-material-type">Material Type</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img align="left" alt="Tag - Default or Copy Tag" class="img-box" src="../images/utility_asset_browser_tag_default.gif" /></p>
+<ul>
+<li><strong>New Tag</strong>: Creates a regular tag.</li>
+<li><strong>Copy from existing tags</strong>: Lets you pick from a dropdown menu containing all tags from the currently selected Assets. Tags that are present in all of the selected Assets are filtered out (since it wouldn't make sense to apply a tag that is already there).</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Tag - Object Triangles" class="img-box" src="../images/utility_asset_browser_tag_object_triangles.gif" /></p>
+<p>Tags Object Assets with their triangle count, offering customizable formatting and rounding options to suit your needs. Examples illustrate the tag's appearance based on your selections before applying them.</p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Tag - Object Vertices" class="img-box" src="../images/utility_asset_browser_tag_object_vertices.gif" /></p>
+<p>Tags Object Assets with their vertex count, offering customizable formatting and rounding options to suit your needs. Examples illustrate the tag's appearance based on your selections before applying them.</p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Tag - Object and Collection Dimensions" class="img-box" src="../images/utility_asset_browser_tag_object_collection_dimensions.gif" /></p>
+<p>Adds Tags displaying the size or dimensions of objects and collections. You can customize the format and adjust options such as decimal precision and unit display. The interface provides an example to preview how the tags will appear based on your selected settings.</p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Tag - Material Texture Resolution" class="img-box" src="../images/utility_asset_browser_tag_material_texture_resolution.png" /></p>
+<p>Tags material Assets with the texture resolution, like 2K, 4K, or 8K, by identifying the albedo texture within the material and checking its resolution.</p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Tag - Material Type" class="img-box" src="../images/utility_asset_browser_tag_material_type.gif" /></p>
+<p>Tags material Assets with its type: "Texture-based" or "Procedural", with an option to include node counts for both types.</p>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Smart Tags will overwrite previously existing Smart Tags of the same type. For example, if you have added the Object Dimensions tag and then edited the object, you can reapply the tag to update it.</p>
+</div>
+<h4 id="Asset-tags-combine-split">- Combine / Split Tags<a class="headerlink" href="#Asset-tags-combine-split" title="Permanent link">&para;</a></h4>
+<p><img align="left" alt="Tag - Combine and Split" class="img-box" src="../images/utility_asset_browser_tag_combine_split.gif" /></p>
+<p>Combine or split existing tags on Assets. Combine single-word tags into a single line, separated by commas (e.g., "tag1, tag2, tag3"), only if they don't contain spaces.</p>
+<p>The split function reverses this, separating combined tags that follow the exact "tag1, tag2, tag3" format. Tags with spaces, like "Long tag with spaces" are unaffected by either function.</p>
+<div style="clear:both"></div>
+
+<h4 id="Asset-tags-remove">- Remove Tags<a class="headerlink" href="#Asset-tags-remove" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="Asset-tags-remove-existing" name="__tabbed_4" type="radio" /><input id="Asset-tags-remove-keyword" name="__tabbed_4" type="radio" /><input id="Asset-tags-remove-smart-tags" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="Asset-tags-remove-existing">Existing</label><label for="Asset-tags-remove-keyword">Keyword</label><label for="Asset-tags-remove-smart-tags">Smart Tags</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img align="left" alt="Tag - Object Triangles" class="img-box" src="../images/utility_asset_browser_remove_tags_existing.png" /></p>
+<p>Displays all tags from the currently selected Assets in the Asset Browser in a dropdown menu, allowing you to choose which tags to remove.</p>
+<p>You also have filtering options to only show common tags from the selected Assets, as well as an "Exclude common" option to exclude these tags.</p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Tag - Object Triangles" class="img-box" src="../images/utility_asset_browser_remove_tags_keyword.png" /></p>
+<p>Allows you to search for tags using a keyword with options for "exact," "contains," "starts with," or "ends with," along with a "case sensitive" option to precisely target specific tags.</p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Tag - Object Triangles" class="img-box" src="../images/utility_asset_browser_remove_tags_smart_tags.png" /></p>
+<p>Allows you to target specific Smart Tags applied by BatchGenie for safe removal without affecting other types of tags.</p>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can also access the Tags menu through the right-click menu in the Asset Browser.</p>
+</div>
+<hr />
+<h3 id="asset-metadata">Asset Metadata<a class="headerlink" href="#asset-metadata" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: Asset Browser ▸ BatchGenie Menu</p>
+</blockquote>
+<p>Batch add metadata for your Assets: Description, License, Copyright, and Author. You can select and edit one or multiple attributes simultaneously. This feature works with both internal and external assets, so you don't have to open each individual Asset Blend file separately.</p>
+<p>If a single Asset is selected, you can use the "Retrieve from Selected Asset" button to load its existing metadata for editing.</p>
+<p><img align="left" alt="Metadata Utility" class="img-box" src="../images/utility_asset_browser_metadata.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can also access the Metadata menu through the right-click menu in the Asset Browser.</p>
+</div>
+<div style="clear:both"></div>
+
+<hr />
+<h3 id="move-assets">Move Assets<a class="headerlink" href="#move-assets" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: Asset Browser ▸ BatchGenie Menu</p>
+</blockquote>
+<p>Move Assets to different Asset Catalogs to help you organize your Asset Library. This feature works with both internal and external Assets, so you don't have to open each individual Asset Blend file separately.</p>
+<p>The 'Catalog Details' section displays the UUID and the Asset Library Path of the chosen Catalog.</p>
+<p><img align="left" alt="Move Assets Utility" class="img-box" src="../images/utility_move_assets.png" /></p>
+<p><img align="left" alt="Move Assets Catalog Example" class="img-box" src="../images/utility_move_assets_catalog_example.png" /></p>
+<h5>Instructions</h5>
+<p>First, make sure you're in the specific Asset library where you want to move your assets. Once that's done, select the assets you want to move, choose the destination, and click OK.</p>
+<div style="clear:both"></div>
+
+<div class="admonition info2">
+<p class="admonition-title">How is this done?</p>
+<p>The utility does not touch the Assets "physical location"; it simply changes the Catalog ID they are associated with, making them appear in a specific catalog (exactly as if you had moved them manually).</p>
+</div>
+<hr />
+<h3 id="load-previews-from-disk">Load previews from disk<a class="headerlink" href="#load-previews-from-disk" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: Asset Browser ▸ BatchGenie Menu ▸ Misc</p>
+</blockquote>
+<p>Load custom Asset Preview images from a specified directory. When assets are selected in the Asset Browser, this tool checks for image files in the selected folder that match the names of the assets.</p>
+<p>Supports all image formats that are natively supported by Blender. The tool prioritizes common formats in the following order: <code>Png</code>, <code>Jpg</code>, <code>Jpeg</code>, <code>Tga</code>, <code>Webp</code>, <code>Exr</code>, <code>Tif</code>, <code>Tiff</code>, and <code>Bmp</code>. It stops searching once a matching image is found. If you need support for less common formats (<code>Sgi</code>, <code>Rgb</code>, <code>Bw</code>, <code>Jp2</code>, <code>J2c</code>, <code>Cin</code>, <code>Dpx</code>, <code>Hdr</code>), ensure <a href="../preferences/#import">Use Extended Formats</a> is enabled in the BatchGenie Preferences.</p>
+<p><img align="left" alt="Load Asset Previews from disk" class="img-box" src="../images/utilities_asset_browser_misc.png" /></p>
+<h5>Instructions</h5>
+
+<ol>
+<li>Select the Assets you want to load previews for in the Asset Browser.</li>
+<li>Navigate to <code>BatchGenie &gt; Misc &gt; Load previews from disk</code>.</li>
+</ol>
+<div style="clear:both"></div>
+
+<hr />
+<h3 id="pack-textures">Pack Textures<a class="headerlink" href="#pack-textures" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: Asset Browser ▸ BatchGenie Menu ▸ Misc</p>
+</blockquote>
+<p>This utility packs all associated textures into their respective blend files, ensuring that your assets retain their appearance without the need for external texture files.</p>
+<p><img align="left" alt="Load Asset Previews from disk" class="img-box" src="../images/utilities_asset_browser_misc.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Note</p>
+<p>This feature packs textures for all Assets inside the blend file, which can affect other Assets that you have not selected but reside in the same blend file as one of the selected Assets.</p>
+</div>
+<h5>Instructions</h5>
+
+<ol>
+<li>Select the Assets you want to pack from the Asset Browser.</li>
+<li>Navigate to <code>BatchGenie &gt; Misc &gt; Pack Textures</code>.</li>
+</ol>
+<div style="clear:both"></div>
+
+<h3 id="export-asset-details-to-excel">Export Asset Details to Excel<a class="headerlink" href="#export-asset-details-to-excel" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: Asset Browser ▸ BatchGenie Menu ▸ Misc</p>
+</blockquote>
+<p>This utility allows you to export detailed information about Assets from the Asset Browser to an Excel file.</p>
+<p><img align="left" alt="Export Asset Details to Excel" class="img-box" src="../images/utilities_asset_browser_misc.png" /></p>
+<h5>Instructions</h5>
+
+<ol>
+<li>In the Asset Browser, select the Assets you want to include in the export.</li>
+<li>Run the <code>Export Asset Details to Excel</code> utility.</li>
+<li>Choose which details you want to include in the export by selecting the corresponding checkboxes.<ul>
+<li>Available Details: Asset Name, Type, Path, Tags, Description, Author, Copyright, License.</li>
+</ul>
+</li>
+<li>Specify the file name and save location in the file browser.</li>
+<li>The generated Excel file will contain the details of the selected Assets, organized into columns such as name, type, and metadata.</li>
+</ol>
+<div class="admonition abstract">
+<p class="admonition-title">Example</p>
+<p><a class="glightbox" href="../images/utility_export-asset-details-to-excel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Export Asset Details to Excel Example" class="img-box on-glb" src="../images/utility_export-asset-details-to-excel.png" /></a></p>
+</div>
+<div style="clear:both"></div>
+
+<hr />
+<h2 id="single-operation-utilities">Single Operation Utilities<a class="headerlink" href="#single-operation-utilities" title="Permanent link">&para;</a></h2>
+<h3 id="replace-node">Replace Node<a class="headerlink" href="#replace-node" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: Shader Editor ▸ BatchGenie N-Panel</p>
+</blockquote>
+<p>This utility offers similar functionality to the <a href="#replace-shader-nodes">Replace Shader Nodes</a> utility but is designed for processing individual nodes rather than batch adjustments. It also allows you to replace any type of node, not just the main shader node as in the main utility.</p>
+<p><img align="left" alt="Replace Node Utility" class="img-box" src="../images/utility_shader_editor_replace_node.gif" /></p>
+<h5>Settings</h5>
+
+<ul>
+<li><strong>Target</strong>:<ul>
+<li><strong>Main Shader</strong>: Targets the main shader connected to the 'Material Output' inside the material.</li>
+<li><strong>Active Node</strong>: Select a node manually.</li>
+</ul>
+</li>
+<li><strong>Keep Original Node</strong>: Check this option if you want to retain the original node for manual inspection of the connections afterward. The original node will be moved to the side of the replaced node.</li>
+<li><strong>Replacement Node-Group</strong>: Select the custom Node-Group to replace the shader from a dropdown menu displaying all Node-Groups in the current blend file.</li>
+<li><strong>Custom Attributes</strong>: Set one or multiple socket attributes such as color or values on the new node. See <a href="../import_textures/#custom-attributes">this section</a> in the documentation for detailed instructions.</li>
+</ul>
+<hr />
+<h3 id="find-zero-strength-nodes-shader-editor">Find Zero Strength Nodes<a class="headerlink" href="#find-zero-strength-nodes-shader-editor" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location: Shader Editor ▸ BatchGenie N-Panel</p>
+</blockquote>
+<p>This utility offers the same functionality as the <a href="#find-zero-strength-nodes">Find Zero Strength Nodes</a> utility but is designed for processing individual materials rather than batch adjustments.</p>
+<p><img align="left" alt="Find Zero Strength Nodes Utility" class="img-box" src="../images/utility_shader_editor_find_zero_strength_nodes.png" /></p>
+<h5>Settings</h5>
+
+<ul>
+<li>
+<p><strong>Type</strong>:</p>
+<ul>
+<li><strong>Normal, Bump &amp; Displacement</strong></li>
+<li><strong>Normal Map</strong></li>
+<li><strong>Displacement</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Highlight Nodes</strong>: Changes the color of the found nodes to red, making them easier to spot visually.</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024-2025 <a href="https://roberd.net" target="_blank" rel="noopener">Roberd Palm</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="batchgenie_footer_container">
+
+    <a href="../changelog" title="Changelog" class="batchgenie_footer_link">Changelog</a>
+    <a href="../about" title="About" class="batchgenie_footer_link">About</a>
+
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.instant", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
