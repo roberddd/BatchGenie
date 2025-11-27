@@ -20,6 +20,10 @@
   max-width: 100%;
 }
 
+.center{
+  text-align: center;
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
   /* .img-box {

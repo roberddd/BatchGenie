@@ -5,7 +5,7 @@ hide:
   - title
   - footer
 ---
-<center>**BatchGenie** is an add-on designed to simplify and automate common asset-related tasks in Blender and help you build your asset library.</center>
+<div class="center" markdown>**BatchGenie** is an add-on designed to simplify and automate common asset-related tasks in Blender and help you build your asset library.</div>
 
 # Key Features {style="margin-top:0"}
 
@@ -43,7 +43,7 @@ hide:
 
 </div>
 
-<center>For a full breakdown of all features, check the '**Feature Summary**' section at the bottom.</center>
+<div class="center" markdown>For a full breakdown of all features, check the '**Feature Summary**' section at the bottom.</div>
 
 
 
