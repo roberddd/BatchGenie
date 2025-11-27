@@ -56,4 +56,5 @@ Explore the powerful features of BatchGenie. This section provides an in-depth l
     - **Load previews from disk**:  Directly load custom asset preview images from a specified directory.
     - **Pack Textures**: Easily pack textures for assets in the Asset Browser with a single click.
     - **Set Origin**: Quickly set object origins.
-    - **Export Asset Details to Excel**: Export detailed information about your assets from the Asset Browser into an Excel file for easy analysis and management
+    - **Export Asset Details to Excel**: Export detailed information about your assets from the Asset Browser into an Excel file for easy analysis and management.
+    - **Create Cryptomatte Node**. This utility automates the creation and management of Cryptomatte nodes in Blender's compositor by gathering objects from a collection or the current selection and populating their matte IDs.

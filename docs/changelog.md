@@ -12,6 +12,21 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.3.0 <small>2025-11-27</small>
+
+> Compatibility: Blender 4.2 LTS, 4.3, 4.4, 4.5 LTS & 5.0
+
+- **New Functionality**:
+    - New utility: **Create Cryptomatte Node**. This utility automates the creation and management of Cryptomatte nodes in Blender's compositor by gathering objects from a collection or the current selection and populating their matte IDs. [More info](utilities.md#create-cryptomatte-node)
+    - Added a new button in the preferences to check whether BatchGenie is up to date. [More info](preferences.md#general)
+    - Added a new preference: **Force Full Asset Library Refresh**. In Blender 4.4 and newer, an internal change prevents asset thumbnails from visually updating in the UI after rendering, even though the new thumbnail is correctly applied. When enabled, BatchGenie will fully refresh the Asset Library view after rendering thumbnails to make updates appear. This refresh will reset your current selection in the Asset Browser. Users can disable this option if they prefer to retain their selection. Versions prior to 4.4 continue to use the original behavior without requiring a full refresh. [More info](preferences.md#render)
+- **Interface**:
+    - Preferences layout has been slightly reorganized for clarity.
+- **Bugfixes**:
+    - Improved compatibility with Blender 5.0, including several necessary adjustments for the updated version.
+
+---
+
 ### 1.2.9 <small>2025-05-25</small>
 
 - **Other**:

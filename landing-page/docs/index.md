@@ -406,6 +406,13 @@ Export detailed information about your assets from the Asset Browser into an Exc
 
 There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Strength Nodes**' utilities available inside the Shader Editor, specifically designed for processing individual materials rather than batch adjustments.
 
+
+---
+
+### Compositor Utilities
+
+**Create Cryptomatte Node**. This utility automates the creation and management of Cryptomatte nodes in Blender's compositor by gathering objects from a collection or the current selection and populating their matte IDs.
+
 </div> <!-- Utilities section end -->
 
 
@@ -472,4 +479,4 @@ For details about the current version and updates, check the [Changelog](https:/
     - **Pack Textures**: Easily pack textures for assets in the Asset Browser with a single click.
     - **Set Origin**: Quickly set object origins.
     - **Export Asset Details to Excel**: Export detailed information about your assets from the Asset Browser into an Excel file for easy analysis and management
-
+    - **Create Cryptomatte Node**. This utility automates the creation and management of Cryptomatte nodes in Blender's compositor by gathering objects from a collection or the current selection and populating their matte IDs.

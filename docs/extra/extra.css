@@ -8,6 +8,9 @@
   --main-box-border-color: #e0e0e0;
 }
 
+.md-grid {
+  max-width: 1440px;
+}
 .md-typeset h5 {
   margin-bottom:-1em;
 }
@@ -64,10 +67,15 @@ video {
 }
 /* ######## </ MOBILE > ######## */
 
-/* ######## < SHOP BUTTONS > ######## */
+/* ######## < BUTTONS > ######## */
 .md-typeset .md-button--stretch {
   width: 99%;
   text-align: center;
+}
+.md-typeset .md-button--social {
+  width: 13em;
+  text-align: center;
+  margin-bottom: 0.25em;
 }
 /* Gumroad */
 .gumroad{
@@ -77,7 +85,7 @@ video {
 .md-button:hover .gumroad {
   color: rgb(31, 31, 31);
 }
-/* ######## </ SHOP BUTTONS > ######## */
+/* ######## </ BUTTONS > ######## */
 
 /* ######## < GRID > ######## */
 /* Light mode */

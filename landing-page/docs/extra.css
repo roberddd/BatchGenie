@@ -10,6 +10,9 @@
   --main-accent-color-orange: #ffa500;
   --main-box-bg: #f1f1f1;
   --main-box-border-color: #e0e0e0;
+
+  /* Borders / outlines */
+  --border-round: 4px;
 }
 
 .md-main {
@@ -103,7 +106,7 @@
 .section-box {
   background-color: var(--main-box-bg);
   border: 1px solid var(--main-box-border-color);
-  border-radius: .1rem;
+  border-radius: var(--border-round);
   display: block;
   padding: .6em .5em .6em .9em;
   position: relative;
@@ -116,7 +119,9 @@
   left: 0;
   width: 6px;
   height: 100%;
-  /* border-radius: .1rem; */
+  border-radius: var(--border-round) 0 0 var(--border-round);
+  display: block;
+
 }
 /* Modifiers for different accent colors */
 .section-box.accent-red::before {

@@ -11,6 +11,7 @@ BatchGenie offers a range of utilities to efficiently manage materials and other
 - Most utilities are located in the main BatchGenie panel in the `3D Viewport > BatchGenie N-Panel > Utilities`, focusing on batch operations, as shown in the image to the right.
 - The `Asset Browser > BatchGenie Menu` contains Asset Tagging & Metadata utilities, which are also accessible via the right-click menu in the Asset Browser.
 - The `Shader Editor > BatchGenie N-Panel` includes additional utilities for single operations on materials.
+- The `Compositor > BatchGenie N-Panel` includes additional utilities for single operations for the compositor.
 
 <div style="clear:both"></div>
 
@@ -480,6 +481,8 @@ You can convert images back and forth between the following formats: `Png, Jpg, 
             - **Nearest Neighbor (Pixel Art)**
             - **Bilinear (Intermediate Quality)**
             - **Bicubic (Smooth Gradients)**
+        - **Max Width**
+        - **Max Height**
 
 !!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
     Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
@@ -791,3 +794,31 @@ This utility offers the same functionality as the [Find Zero Strength Nodes](#fi
     - **Displacement**
 
 - **Highlight Nodes**: Changes the color of the found nodes to red, making them easier to spot visually.
+
+
+---
+
+
+### Create Cryptomatte Node
+
+> Location: Compositor ▸ BatchGenie N-Panel
+
+This utility automates the creation and management of Cryptomatte nodes in Blender's compositor by gathering objects from a collection or the current selection and populating their matte IDs. It streamlines the workflow for isolating and compositing specific objects, saving time when setting up render passes for complex scenes.
+
+![Create Cryptomatte Node Utility](images/utility_compositor_create-cryptomatte-node.webp){ .img-box align=left }
+
+!!! abstract inline end "Example"
+    ![Create Cryptomatte Node Utility Example](images/utility_compositor_create-cryptomatte-node_example.webp){ .img-box .on-glb }
+
+<h5>Settings</h5>
+
+- **Source**: Choose the source for the Cryptomatte IDs.
+    - **Selected Objects**: Use selected object(s) in the outliner.
+    - **Collection**: Use the active collection.
+        - **Include Subcollections**: Include objects from all subcollections.
+- **Target**: Choose whether to use the active node or create a new Cryptomatte node.
+    - **Create New**: Create a new Cryptomatte node.
+    - **Active Node**: Use the currently selected Cryptomatte node.
+- **Matte ID Mode**: How to handle matte IDs in the node.
+    - **Append**: Append new IDs to existing ones.
+    - **Replace**: Replace existing matte IDs.
