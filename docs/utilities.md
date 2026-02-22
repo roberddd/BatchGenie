@@ -846,7 +846,7 @@ Unlike other Shader Editor utilities, this one appears in the **right-click cont
 <h5>Instruction</h5>
 
 1. Right click on the Image Texture Node you want to process.
-- Select **This is a Normal Map**.
+- Select '**This is a Normal Map**'.
 - Done.
 
     !!! abstract "Example"

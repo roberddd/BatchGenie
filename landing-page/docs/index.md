@@ -404,7 +404,7 @@ Export detailed information about your assets from the Asset Browser into an Exc
 
 ### Shader Editor Utilities
 
-There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Strength Nodes**' utilities available inside the Shader Editor, specifically designed for processing individual materials rather than batch adjustments. Other utilities, such as **"Mark as Normal Map"**, are also available directly in the right-click context menu for Image Texture nodes.
+There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Strength Nodes**' utilities available inside the Shader Editor, specifically designed for processing individual materials rather than batch adjustments. Other utilities, such as '**Mark as Normal Map**', are also available directly in the right-click context menu for Image Texture nodes.
 
 ---
 
