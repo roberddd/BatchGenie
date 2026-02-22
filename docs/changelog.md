@@ -12,6 +12,20 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.3.1 <small>2025-02-22</small>
+
+- **New Functionality**:
+    - New utility: **Mark as Normal Map**. Adds a right-click menu option for Image Texture nodes in the Shader Editor, automatically setting the texture to Non-Color and creating a connected Normal Map node. [More info](utilities.md#mark-as-normal-map)
+- **Improved Functionality**:
+    - **Texture Import**: Now supports importing `AVIF` images.
+    - **Utility `Convert Images`**: Now supports `AVIF` image format. [More info](utilities.md#convert-images)
+    - **Utility `Relink Converted Images`**: Now supports `AVIF` image format. [More info](utilities.md#relink-converted-images)
+- **Other**:
+    - Improved error handling for rendering via the Asset Browser to prevent rare edge-case errors.
+    - PIL Python library updated to version 12.1.0.
+
+---
+
 ### 1.3.0 <small>2025-11-27</small>
 
 > Compatibility: Blender 4.2 LTS, 4.3, 4.4, 4.5 LTS & 5.0

@@ -404,8 +404,7 @@ Export detailed information about your assets from the Asset Browser into an Exc
 
 ### Shader Editor Utilities
 
-There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Strength Nodes**' utilities available inside the Shader Editor, specifically designed for processing individual materials rather than batch adjustments.
-
+There are also versions of the '**Replace Shader Nodes**' and '**Find Zero Strength Nodes**' utilities available inside the Shader Editor, specifically designed for processing individual materials rather than batch adjustments. Other utilities, such as **"Mark as Normal Map"**, are also available directly in the right-click context menu for Image Texture nodes.
 
 ---
 
@@ -479,4 +478,5 @@ For details about the current version and updates, check the [Changelog](https:/
     - **Pack Textures**: Easily pack textures for assets in the Asset Browser with a single click.
     - **Set Origin**: Quickly set object origins.
     - **Export Asset Details to Excel**: Export detailed information about your assets from the Asset Browser into an Excel file for easy analysis and management
-    - **Create Cryptomatte Node**. This utility automates the creation and management of Cryptomatte nodes in Blender's compositor by gathering objects from a collection or the current selection and populating their matte IDs.
+    - **Create Cryptomatte Node**: This utility automates the creation and management of Cryptomatte nodes in Blender's compositor by gathering objects from a collection or the current selection and populating their matte IDs.
+    - **Mark As Normal Map**: Quickly mark Image Textures as Normal Maps by auto-setting Non-Color and adding a connected Normal Map node.

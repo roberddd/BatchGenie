@@ -454,7 +454,7 @@ While not an all-encompassing renaming tool, this function provides targeted ass
 > Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities
 
 This utility allows you to seamlessly convert images between multiple formats, supporting both lossless and lossy compression methods. It's ideal for optimizing file sizes, preparing assets for various workflows, or standardizing image formats across projects.
-You can convert images back and forth between the following formats: `Png, Jpg, Webp, Tga, Tif, Bmp`.
+You can convert images back and forth between the following formats: `Png, Jpg, Webp, Avif, Tga, Tif, Bmp`.
 
 ![Convert Images Utility](images/utility_convert-images.png){ .img-box align=left }
 
@@ -505,7 +505,7 @@ This utility helps you update Blender's links to images that have been converted
 
 <h5>Options</h5>
 
-- **Old Format**: Select the file format you are converting from. The supported formats in Blender include: `Png, Jpg, Jpeg, Tga, Webp, Exr, Tif, Tiff, Bmp, Sgi, Rgb, Bw, Jp2, J2c, Cin, Dpx, Hdr`.
+- **Old Format**: Select the file format you are converting from. The supported formats in Blender include: `Png, Jpg, Jpeg, Tga, Webp, Exr, Tif, Tiff, Bmp, Avif, Sgi, Rgb, Bw, Jp2, J2c, Cin, Dpx, Hdr`.
 - **New Format**: Choose the file format you are converting to. The available formats match those listed for the "Old Format".
 - **File Verification**:
     - **Verify if old file exists**: Ensures that the old file exists before attempting to relink.
@@ -822,3 +822,34 @@ This utility automates the creation and management of Cryptomatte nodes in Blend
 - **Matte ID Mode**: How to handle matte IDs in the node.
     - **Append**: Append new IDs to existing ones.
     - **Replace**: Replace existing matte IDs.
+
+
+---
+
+
+### Mark as Normal Map
+
+> Location: Shader Editor ▸ Right-Click Context Menu (Image Texture Node)
+
+This utility lets you **right-click** on an **Image Texture Node** and select **"Mark as Normal Map"** to automatically set the texture to **Non-Color** and create a connected **Normal Map** node.
+
+Unlike other Shader Editor utilities, this one appears in the **right-click context menu** and is **context-dependent**, meaning it is only visible when an Image Texture Node is selected.
+
+!!! info2 "Note"
+    ![Shader Editor Utilities Misc](images/utility_shader_editor_misc.webp){ .img-box align=left }
+
+    This utility is **enabled by default**, but can be toggled via `Shader Editor ▸ BatchGenie N-Panel ▸ Misc`. Under **Show in Context Menu**, you can choose whether this utility is available in the right-click menu.
+
+<div style="clear:both"></div>
+
+
+<h5>Instruction</h5>
+
+1. Right click on the Image Texture Node you want to process.
+- Select **This is a Normal Map**.
+- Done.
+
+    !!! abstract "Example"
+        ![Mark as Normal Map Utility](images/utility_shader_editor-mark_as_normal_map-example1.webp){ .img-box align=left }
+
+        ![Mark as Normal Map Utility](images/utility_shader_editor-mark_as_normal_map-example2.webp){ .img-box align=left }

@@ -31,11 +31,11 @@ Below, you'll find links to my social media profiles, where I share digital art 
 
 ## Other add-ons by me
 
-**PF2B** (PlantFactory to Blender) is an addon that enables the direct import of plants created in [PlantFactory](https://www.bentley.com/software/e-on-software-free-downloads/){ target="_blank" } by e-on software into Blender.
+**PF2B**
+<br>Imports plants created in PlantFactory by e-on software directly into Blender, giving you access to over 200 plant species and more than 10,000 unique presets.
 
 ![PF2B Addon](images/other/pf2b.webp){ .img-box align=left }
 
   - [Gumroad](https://roberd.gumroad.com/l/PF2B)
   - [SuperHive (BlenderMarket)](https://superhivemarket.com/products/pf2b)
   - [Documentation](https://pf2b.roberd.net/)
-
