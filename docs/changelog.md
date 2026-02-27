@@ -12,7 +12,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
-### 1.3.1 <small>2025-02-22</small>
+### 1.3.1 <small>2026-02-22</small>
 
 - **New Functionality**:
     - New utility: **Mark as Normal Map**. Adds a right-click menu option for Image Texture nodes in the Shader Editor, automatically setting the texture to Non-Color and creating a connected Normal Map node. [More info](utilities.md#mark-as-normal-map)
