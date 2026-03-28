@@ -5,6 +5,7 @@ document$.subscribe(() => {
     const iconMap = {
         "New Functionality": "✨",
         "Improved Functionality": "💪",
+        "New / Improved Functionality": "💪",
         "Interface": "💻",
         "Other": "🔧",
         "Bug Fixes": "🐛"
