@@ -205,7 +205,7 @@ video {
 /* ######## < CHANGELOG > ######## */
 /* Compact */
 .md-typeset .changelog>blockquote>p{ /* Blockquote for blender version compability */
-  margin-bottom:-0.9em;
+  margin-bottom:-0.25em;
   margin-top:-0.5em;
 }
 .md-typeset .changelog>ul>li { /* Main List items */

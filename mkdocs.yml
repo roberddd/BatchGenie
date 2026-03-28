@@ -38,6 +38,9 @@ theme:
 extra_css:
   - extra/extra.css
 
+extra_javascript:
+  - extra/changelog-icons.js
+
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
