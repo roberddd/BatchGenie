@@ -15,7 +15,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 ### 1.3.2 <small>2026-03-28</small>
 
 > **Compatibility:** Adds support for Blender 5.1.
-<br>**Note:** Blender 5.1 updates its internal Python version, which requires separate builds. BatchGenie is therefore provided in two versions: one for Blender 4.5-5.0 and one for 5.1+.
+<br>**Note:** Blender 5.1 updates its internal Python version, which requires separate builds. BatchGenie is therefore provided in two versions: one for Blender 4.2-5.0 and one for 5.1+.
 
 - **Other**:
     - Support for Blender 5.1
