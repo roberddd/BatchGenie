@@ -1,0 +1,1 @@
+{"mappings": [{"item": {"url": "about/", "title": "About"}, "tags": ["Author", "Contact"]}, {"item": {"url": "changelog/", "title": "Changelog"}, "tags": ["Release history"]}, {"item": {"url": "render/", "title": "Render Assets"}, "tags": ["HDRi"]}, {"item": {"url": "utilities/", "title": "Utilities"}, "tags": ["Troubleshoot"]}]}
