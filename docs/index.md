@@ -1,53 +1,6 @@
 Welcome to BatchGenie, an add-on designed to simplify and automate common Asset-related tasks in [Blender](https://www.blender.org/){ target="_blank" }. Find out more about BatchGenie's powerful tools on the [Feature Details](feature-details.md) page.
 { data-search-exclude }
 
-<!--
-## For New Users
-
-### Why Choose BatchGenie?
-
-<div class="grid cards grid_custom" markdown>
-
--   :material-camera:{ .lg .middle style="color:var(--main-accent-color-green)" } __Batch Render Assets__
-
-    ---
-
-    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library.
-
-
--   :material-image-multiple:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import__
-
-    ---
-
-    Streamlined Asset importing with a single click, including PBR textures and more, offering robust customization options for bulk imports.
-
-</div>
-
-<div class="grid cards grid_custom"  markdown>
-
--   :material-export-variant:{ .lg .middle style="color:var(--main-accent-color-orange)" } __Batch Export__
-
-    ---
-
-    Batch export objects, collections, and materials directly from the Asset Browser, ensuring your assets are ready for use in any project.
-
-
--   :material-tools:{ .lg .middle style="color:var(--main-accent-color-blue)" } __Batch Utilities__
-
-    ---
-
-    Handle common tasks efficiently, such as updating material settings or finding and fixing unconnected nodes.
-
-</div>
-
-
-### Promo Video
-
-<div class="youtube-wrapper">
-    <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/o1rj7gl_im4?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
- -->
-
 ## Where to Get BatchGenie
 
 You can buy BatchGenie in the following stores:
